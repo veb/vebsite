@@ -3,7 +3,7 @@ VEBsite
 
 ## Prerequisites
 ### gems
-#####Assuming all commands are run as sudo
+##### Assuming all commands are run as sudo
 	gem install sass
 	gem install bourbon
 	gem install bitters
