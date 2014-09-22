@@ -24,7 +24,7 @@
   @include clearfix;
     
   .grid-item {
-    @include transition (all 0.2s ease-in-out);
+    // @include transition (all 0.2s ease-in-out);
     height: $grid-item-height;
     background: $grid-item-background;
     width: 100%;
