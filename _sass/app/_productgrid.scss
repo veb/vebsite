@@ -6,6 +6,7 @@
   $grid-items-background: $base-background-color;
   $grid-item-background: desaturate($base-accent-color, 30); 
   $grid-images: 
+    '/assets/images/gridicons/therable.png',
     '/assets/images/gridicons/booky.png',
     '/assets/images/gridicons/duets.png',
     '/assets/images/gridicons/lick.png',
@@ -42,7 +43,7 @@
       @include grid-item-columns($grid-item-columns);
     }
 
-    @for $i from 1 to 8 { 
+    @for $i from 1 to 9 { 
 // assign colors from $grid-item-colors list
       &:nth-child(#{$i}) {
         background: 
@@ -115,6 +116,11 @@
       height: 3em;
       margin: auto;
       margin-bottom: 1em;
+      @include border-top-radius(10px);
+      @include border-bottom-radius(10px);
+      @include border-left-radius(10px);
+      @include border-right-radius(10px);
+
     }
 
   .grid-item h1 {
