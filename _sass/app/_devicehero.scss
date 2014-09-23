@@ -157,3 +157,18 @@ $device-screen-image: 'https://raw.githubusercontent.com/thoughtbot/refills/mast
   }
 }
 
+.image-gradient-dynamic {
+  position: relative;
+  line-height: 0;
+  width: 100%;
+  margin-bottom: $base-line-height;  
+
+  img {
+   width: 100%;
+   height: auto;
+   position: relative;
+   top: 0;
+   left: 0; 
+  }
+}
+
