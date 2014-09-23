@@ -7,18 +7,22 @@ layout: default
 
 
 <div class="container">
-<div class="device-background">
-	<div class="device-text">
-		<h4>{{ page.appname }}</h4>
-		{{ content }}
-		<button>Learn More</button>
-	</div>
-	<div class="phonedevice">
-		<div class="marvel-device nexus5">
-			<div class="top-bar"></div>
-			<div class="camera"></div>
-			<a class="screen" href="#"></a>
+	<div class="device-background">
+		<div class="device-text">
+			<h4>{{ page.appname }}</h4>
+			{{ page.tagline }}
+		</div>
+		<div class="phonedevice">
+			<div class="marvel-device nexus5">
+				<div class="top-bar"></div>
+				<div class="camera"></div>
+				<a class="screen" href="#"></a>
+			</div>
 		</div>
 	</div>
+	
 </div>
+<div class="container">
+	{{ content }}
 </div>
+

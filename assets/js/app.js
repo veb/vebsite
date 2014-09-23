@@ -1,10 +1,14 @@
 requirejs.config({
-    "baseUrl": "assets/js/lib",
+    "baseUrl": "/assets/js/lib",
     "paths": {
-      "app": "../app"
+      "app": "/assets/js/app"
     },
-    "jquery": "jquery"
+    "jquery": "jquery",
+    "shim": {
+    	"owl.carousel": ['jquery']
+    }
 });
 
 // Load the main app module to start the app
 requirejs(["app/main"]);
+
