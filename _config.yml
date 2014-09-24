@@ -18,3 +18,5 @@ sass:
   style: :nested
 
 gems: [font-awesome-sass]
+
+include: [".htpasswd", ".htaccess"]
