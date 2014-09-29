@@ -133,7 +133,7 @@
       margin: auto;
       color: transparentize($grid-item-color, .3);
       @include media($medium-screen) {
-        max-width: 70%;
+        // max-width: 70%;
       }
     }
 
