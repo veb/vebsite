@@ -249,3 +249,13 @@
     }
   }
 }
+
+.accessibility-sidebar {
+  position: fixed;
+  top: 10em;
+  li {
+    padding: 10px;
+    background-color: $grey-color-light;
+    color: $grey-color-dark;
+  }
+}

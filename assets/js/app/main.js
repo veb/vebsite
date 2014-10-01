@@ -45,6 +45,22 @@ require(["jquery"], function($) {
 		        }
 		    }
 		});
+
+		$('#invert').click(function() {
+			if ($('html').hasClass('html-inverted')) {
+				$('html').removeClass('html-inverted');
+			} else {
+				$('html').addClass('html-inverted');	
+			}
+		});
+
+		$('#embiggen').click(function() {
+			if ($('body').hasClass('body-embiggened')) {
+				$('body').removeClass('body-embiggened');
+			} else {
+				$('body').addClass('body-embiggened');	
+			}
+		});
 	});
 });
 
