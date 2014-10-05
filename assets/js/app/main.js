@@ -47,10 +47,10 @@ require(["jquery"], function($) {
 		});
 
 		$('#invert').click(function() {
-			if ($('html').hasClass('html-inverted')) {
-				$('html').removeClass('html-inverted');
+			if ($('body').hasClass('html-inverted')) {
+				$('body').removeClass('html-inverted');
 			} else {
-				$('html').addClass('html-inverted');	
+				$('body').addClass('html-inverted');	
 			}
 		});
 
