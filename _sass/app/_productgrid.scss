@@ -6,14 +6,9 @@
   $grid-items-background: $base-background-color;
   $grid-item-background: desaturate($base-accent-color, 30); 
   $grid-images: 
-    '/assets/images/gridicons/therable.jpg',
-    '/assets/images/gridicons/booky.jpg',
-    '/assets/images/gridicons/duets.jpg',
-    '/assets/images/gridicons/lick.png',
-    '/assets/images/gridicons/mode.png',
-    '/assets/images/gridicons/mexicam.jpg',
-    '/assets/images/gridicons/poop.jpg',
-    '/assets/images/gridicons/makatimap.png';
+    '/assets/images/gridicons/sherlock.jpg',
+    '/assets/images/gridicons/toribash.jpg',
+    '/assets/images/gridicons/teespring.png';
   
   $grid-item-border-size: 9px;
   $grid-item-columns: 4;
@@ -43,7 +38,7 @@
       @include grid-item-columns($grid-item-columns);
     }
 
-    @for $i from 1 to 9 { 
+    @for $i from 1 to 4 { 
 // assign colors from $grid-item-colors list
       &:nth-child(#{$i}) {
         background: 
