@@ -8,8 +8,12 @@ body
 
 .page-content
     padding-top: 60px
+
+.post-title
+    text-align: center
+
 .html-inverted
-    @include filter(invert(100%))
+    @include invert()
     
 .body-embiggened
     font-size: $base-font-size * 1.5
@@ -36,6 +40,16 @@ $mobile: new-breakpoint(max-width 500px 4)
         @include span-columns(6)
         @include media($mobile)
             @include span-columns(4)
+        .bullet-img
+            display: block
+            height: 10em
+            margin: auto
+            margin-bottom: 1em
+            margin-left: 0px
+
+.responsive-container-single
+    @include outer-container
+    article
         .bullet-img
             display: block
             height: 10em

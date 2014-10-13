@@ -8,7 +8,8 @@
   $grid-images: 
     '/assets/images/gridicons/sherlock.jpg',
     '/assets/images/gridicons/toribash.jpg',
-    '/assets/images/gridicons/teespring.png';
+    '/assets/images/gridicons/teespring.png',
+    '/assets/images/gridicons/pleasecaption.png';
   
   $grid-item-border-size: 9px;
   $grid-item-columns: 4;
@@ -38,7 +39,7 @@
       @include grid-item-columns($grid-item-columns);
     }
 
-    @for $i from 1 to 4 { 
+    @for $i from 1 to 5 { 
 // assign colors from $grid-item-colors list
       &:nth-child(#{$i}) {
         background: 
