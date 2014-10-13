@@ -1,0 +1,11 @@
+@mixin invert($amt: 100%) {
+  -o-filter: invert($amt);
+  -ms-filter: invert($amt);
+  -moz-filter: invert($amt);
+  -webkit-filter: invert($amt);
+  
+  @-moz-document url-prefix() { 
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+	background-color: #000;
+  }
+}
