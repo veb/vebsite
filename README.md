@@ -63,8 +63,7 @@ Do note that the HTML content is placed between the site header and footer, no n
 If the `title` frontmatter is left empty, no title is displayed.  If not empty, an `<h1>` tag is placed before the page content.
 
 ##### Example
-Lets say we save this under `projects/test.html'
-After executing `jekyll build` , the page can be accessed via 
+Lets say we save this under `projects/test.html`.  After executing `jekyll build` , the page can be accessed via 
 	http://localhost:4000/projects/test.html
 
 Further information on [page creation](http://jekyllrb.com/docs/pages/)
@@ -80,3 +79,25 @@ jQuery functions/methods can be added to the `assets/js/app/main.js` file inside
 ### Images/Assets
 Images are found under `assets/images`
 
+
+### ProductGrid
+To add an item to the product grid, create a page in `products` folder with the following template
+	
+	---
+	layout: page
+	title: <product title>
+	description: <short description>
+	thumbnail: <path to image (relative to page root)>
+	background: <OPTIONAL: hexcolor of tile>
+	type: <web|android|ios|other>
+	---
+	<!-- html content -->
+
+Product title is the name of the product in the thumbnail.
+Description is the short blurb under the product title.
+
+Thumbnail would both be the thumbnail AND the background image of a tile in the product grid. (ex: `/assets/images/gridicons/sherlock.jpg`)
+
+Background: you can specify a fallback color for the tile in lieu of a background image
+
+Type is the banner type for the tile (the ribbon thing)
