@@ -106,4 +106,4 @@ Type is the banner type for the tile (the ribbon thing)
 
 Categories is a SPACE delimited list of categories a page can be in.  For the page to be displayed in the product grid, this field must contain `project`
 
-A page can be placed in the menu at the top if categories contain `menu`
+A page can be placed in the menu at the top if categories contain `menu` (see bob.html and contactus.html)
