@@ -20,3 +20,5 @@ sass:
 gems: [font-awesome-sass]
 
 include: [".htpasswd", ".htaccess"]
+
+categories: [project, product, stuff, testimonial, wip]

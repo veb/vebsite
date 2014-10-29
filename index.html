@@ -6,7 +6,7 @@ layout: default
 
 <div id="index-bullets" class="container">
     <ul class="bullets">
-        <li class="bullet three-col-bullet">
+        <li class="bullet two-col-bullet">
             <span class="fa-stack fa-2x bullet-icon bullet-icon-1">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
@@ -16,7 +16,7 @@ layout: default
                 <p>We build apps with a focus on usability first.  And aesthetic pleasantness.  With a sprinkling of innovation here and there.  We build apps we would love to use ourselves</p>
             </div>
         </li>
-        <li class="bullet three-col-bullet">
+        <li class="bullet two-col-bullet">
             <span class="fa-stack fa-2x bullet-icon bullet-icon-2">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
@@ -26,14 +26,17 @@ layout: default
                 <p>We build clean, maintainable and forward thinking sites using equally clean, maintainable and forward thinking platforms and technologies.  If you'd like to seek the cutting edge, we're your guys.  We know some knife guys who can help your edge seeking as well!</p>
             </div>
         </li>
-        <li class="bullet three-col-bullet">
+    </ul>
+
+    <ul class="bullets">
+        <li class="bullet two-col-bullet">
             <span class="fa-stack fa-2x bullet-icon bullet-icon-3">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-wheelchair fa-stack-1x fa-inverse"></i>
             </span>
             <div class="bullet-content">
                 <h2>Accessible Apps</h2>
-                <p>Mobile first design creates a more pleasent view and ease of use. This is extremely important for people with vision problems. No need to zoom in and out - we've got that covered for you. Nothing makes us more annoyed than some website that looks awful on mobile. We don't stop there either, we offer people with hearing problems solutions too -- we caption every video that we will have on our applications, or websites.</p>
+                <p>Mobile first design creates a more pleasent view and ease of use. This is extremely important for people with vision problems. No need to zoom in and out - we've got that covered for you. Nothing makes us more annoyed than some website that looks awful on mobile. </p>
             </div>
         </li>
     </ul>
@@ -41,43 +44,19 @@ layout: default
 
 
 <div class="container">
-
-    <div class="grid-items">
-        <a href="projects/sherlock.html" class="grid-item">
+<div class="grid-items">
+{% for page in site.pages %}
+    {% if page.categories contains 'project' %}
+        <a href="{{ page.url }}" class="grid-item">
             <div class="ribbon-wrapper">
                 <div class="ribbon ribbon-web">WEB</div>
             </div>
-            <img src="/assets/images/gridicons/sherlock.jpg" alt="">
-            <h1>Modern Sherlock</h1>
-            <p>Facebook community for the Sherlock BBC Programme</p>
+            <img src="{{ page.thumbnail }}" alt="">
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.description }}</p>
         </a>
-        <a href="projects/toribash.html" class="grid-item grid-item-big">
-            <div class="ribbon-wrapper">
-                <div class="ribbon ribbon-web">WEB</div>
-            </div>
-            <img src="/assets/images/gridicons/toribash.jpg" alt="">
-            <h1>Toribash</h1>
-            <p>Online violence simulator/game</p>
-        </a>
-        <a href="projects/teespring.html" class="grid-item grid-item-big">
-            <div class="ribbon-wrapper">
-                <div class="ribbon ribbon-web">WEB</div>
-            </div>
-            <img src="/assets/images/gridicons/teespring.png" alt="">
-            <h1>Teespring</h1>
-            <p>Do-it-yourself Shirtvertising</p>
-        </a>
-        <a href="projects/stuff.html" class="grid-item">
-            <div class="ribbon-wrapper">
-                <div class="ribbon ribbon-web">WEB</div>
-            </div>
-            <img src="/assets/images/gridicons/pleasecaption.png" alt="">
-            <h1>Other Projects</h1>
-            <p>Things not quite there yet</p>
-        </a>
-
-        
-    </div>
-
-
+    {% endif %}
+{% endfor %} <!-- page -->
 </div>
+</div>
+

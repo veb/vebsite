@@ -80,7 +80,7 @@ jQuery functions/methods can be added to the `assets/js/app/main.js` file inside
 Images are found under `assets/images`
 
 
-### ProductGrid
+### Pages
 To add an item to the product grid, create a page in `products` folder with the following template
 	
 	---
@@ -90,10 +90,12 @@ To add an item to the product grid, create a page in `products` folder with the 
 	thumbnail: <path to image (relative to page root)>
 	background: <OPTIONAL: hexcolor of tile>
 	type: <web|android|ios|other>
+	categories: <project|product|stuff|testimonial|wip|menu>
 	---
 	<!-- html content -->
 
 Product title is the name of the product in the thumbnail.
+
 Description is the short blurb under the product title.
 
 Thumbnail would both be the thumbnail AND the background image of a tile in the product grid. (ex: `/assets/images/gridicons/sherlock.jpg`)
@@ -101,3 +103,7 @@ Thumbnail would both be the thumbnail AND the background image of a tile in the 
 Background: you can specify a fallback color for the tile in lieu of a background image
 
 Type is the banner type for the tile (the ribbon thing)
+
+Categories is a SPACE delimited list of categories a page can be in.  For the page to be displayed in the product grid, this field must contain `project`
+
+A page can be placed in the menu at the top if categories contain `menu`

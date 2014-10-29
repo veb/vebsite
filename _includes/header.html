@@ -3,9 +3,9 @@
     <a href="/index.html" class="mobile-logo">
       <img src="/assets/images/veb_header.png" alt="Logo image">
     </a>
+
     <a href="" class="centered-navigation-menu-button">MENU</a>
     <ul class="centered-navigation-menu">
-      
       <li class="nav-link logo">
         <a href="/index.html" class="logo">
           <img src="/assets/images/veb_header.png" alt="Logo image">
@@ -13,7 +13,14 @@
       </li>
       <!-- <li class="nav-link"><a href="aboutus.html">About Us</a></li>
       <li class="nav-link"><a href="testimonials.html">Testimonials</a></li> -->
-      <li class="nav-link"><a href="/contactus.html">Contact</a></li>
+      <!-- <li class="nav-link"><a href="/contactus.html">Contact</a></li> -->
+
+{% for page in site.pages %}
+    {% if page.categories contains 'menu' %}
+        <li class="nav-link"><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endif %}
+{% endfor %} <!-- page -->
+
     </ul>
   </div>
 </header>

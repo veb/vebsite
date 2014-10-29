@@ -1,6 +1,29 @@
 require(["jquery"], function($) {
 	console.log("jquery loaded");
 	$(document).ready(function() {
+		$('.grid-item').each(function(i) {
+			var imgSrc = $(this).children('img').attr("src");
+			$(this).css({
+				background: " -moz-linear-gradient(top, rgba(64,64,64,0.45) 0%, rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center"
+				}).css({
+				background: " -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,64,64,0.45)), color-stop(100%,rgba(64,64,64,0.45))), url("+ imgSrc +") center"
+				}).css({
+				background: " -webkit-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center"
+				}).css({
+				background: " -o-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center"
+				}).css({
+				background: " -ms-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center"
+				}).css({
+				background: " linear-gradient(to bottom, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center"
+				// }).css({
+				// background: "url("+ imgSrc +")"
+				}).css({
+				filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#73404040', endColorstr='#73404040',GradientType=0 )"
+			});
+		});
+
+
+
 	    var menu = $('.centered-navigation-menu');
 	    var menuToggle = $('.centered-navigation-menu-button');
 	    var signUp = $('.sign-up');

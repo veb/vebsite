@@ -5,12 +5,7 @@
 .grid-items {
   $grid-items-background: $base-background-color;
   $grid-item-background: desaturate($base-accent-color, 30); 
-  $grid-images: 
-    '/assets/images/gridicons/sherlock.jpg',
-    '/assets/images/gridicons/toribash.jpg',
-    '/assets/images/gridicons/teespring.png',
-    '/assets/images/gridicons/pleasecaption.png';
-  
+
   $grid-item-border-size: 9px;
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
@@ -23,6 +18,9 @@
     // @include transition (all 0.2s ease-in-out);
     height: $grid-item-height;
     background: $grid-item-background;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     overflow: hidden;
     float: left;
@@ -33,38 +31,43 @@
     border-right: $grid-item-border-size /2 solid $grid-items-background;
     text-align: center;
     cursor: pointer;
+
+    // needs latest Compass, add '@import "compass"' to your scss
+    @include background(linear-gradient(rgba(64, 64, 64, 0.45), rgba(64, 64, 64, 0.45)) left );
+
+
     @include position( relative, 0px 0 0 0px );
 
     @include media($large-screen) {
       @include grid-item-columns($grid-item-columns);
     }
 
-    @for $i from 1 to 5 { 
-// assign colors from $grid-item-colors list
-      &:nth-child(#{$i}) {
-        background: 
-            linear-gradient(
-              rgba(64, 64, 64, 0.45), 
-              rgba(64, 64, 64, 0.45)
-            ),
-            url(nth($grid-images, $i));
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        &:hover {
-          background: 
-            linear-gradient(
-              rgba(64, 64, 64, 0.65), 
-              rgba(64, 64, 64, 0.65)
-            ),
-            /* bottom, image */
-            url(nth($grid-images, $i));
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-        }
-      }
-    }
+//     @for $i from 1 to 5 { 
+// // assign colors from $grid-item-colors list
+//       &:nth-child(#{$i}) {
+//         background: 
+//             linear-gradient(
+//               rgba(64, 64, 64, 0.45), 
+//               rgba(64, 64, 64, 0.45)
+//             ),
+//             url(nth($grid-images, $i));
+//         background-repeat: no-repeat;
+//         background-position: center;
+//         background-size: cover;
+//         &:hover {
+//           background: 
+//             linear-gradient(
+//               rgba(64, 64, 64, 0.65), 
+//               rgba(64, 64, 64, 0.65)
+//             ),
+//             /* bottom, image */
+//             url(nth($grid-images, $i));
+//           background-repeat: no-repeat;
+//           background-position: center;
+//           background-size: cover;
+//         }
+//       }
+//     }
   }
 
   .ribbon-wrapper {
