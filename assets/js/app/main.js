@@ -24,18 +24,20 @@ require(["jquery"], function($) {
 
 
 
-	    var menu = $('.centered-navigation-menu');
-	    var menuToggle = $('.centered-navigation-menu-button');
-	    var signUp = $('.sign-up');
+		var menuToggle = $('#js-mobile-menu').unbind();
+		$('#js-navigation-menu').removeClass("show");
 
-	    $(menuToggle).on('click', function(e) {
-	        e.preventDefault();
-	        menu.slideToggle(function() {
-	            if (menu.is(':hidden')) {
-	                menu.removeAttr('style');
-	            }
-	        });
-	    });
+		menuToggle.on('click', function(e) {
+			e.preventDefault();
+			$('#js-navigation-menu').slideToggle(function(){
+				if($('#js-navigation-menu').is(':hidden')) {
+					menuToggle.removeClass('close');
+					$('#js-navigation-menu').removeAttr('style');
+				} else {
+					menuToggle.addClass('close');
+				}
+			});
+		});
 
 	    $('.accordion-tabs-minimal').each(function(index) {
 	        $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();

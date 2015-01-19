@@ -21,7 +21,7 @@ $purple                           :#7a43b6
 
 // Typography
 $baseFontSize                     :1em
-$baseFontFamily                   :"Arvo", "Helvetica Neue", Helvetica, Arial, sans-serif
+
 
 $baseLineHeight                   :1.5em
 $textColor                        :$grayDark
@@ -30,14 +30,14 @@ $textColor                        :$grayDark
 $primaryButtonBackground          :$linkColor
 
 article
-  font-family: $baseFontFamily
+  font-family: $alt-sans-serif
   font-size: $baseFontSize
   @include clearfix
   text-align: left
 
   p
     margin: 0 0 ($baseLineHeight / 2)
-    font-family: $baseFontFamily
+    font-family: $alt-sans-serif
     font-size: $baseFontSize
     line-height: $baseLineHeight
     small
@@ -55,7 +55,7 @@ article
 
   h1, h2, h3, h4, h5, h6
     margin: 0
-    font-family: $baseFontFamily
+    font-family: $sans-serif
     font-weight: bold
     color: $grayDark
     text-rendering: optimizelegibility // Fix the character spacing for headings
