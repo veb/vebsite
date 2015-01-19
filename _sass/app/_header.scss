@@ -192,7 +192,7 @@ header.navigation {
       }
 
       &:after {
-        content: '›';
+        content: '\25BE';
         font-size: 1.2em;
         position: absolute;
         right: $navigation-submenu-padding / 2;
