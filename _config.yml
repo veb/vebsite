@@ -11,7 +11,7 @@ github_username:  actualbrain
 # Build settings
 markdown: kramdown
 
-encoding: utf-8
+encoding: UTF-8
 
 sass:
   sass_dir: _sass
