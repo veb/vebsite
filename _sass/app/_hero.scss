@@ -1,11 +1,8 @@
 .hero {
-  $hero-background-top: white; 
-  $hero-background-bottom: white;
   $hero-color: #000;
   $gradient-angle: 10deg;
 
-  @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
-
+  
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;

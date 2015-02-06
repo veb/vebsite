@@ -26,7 +26,11 @@ header.navigation {
   $navigation-submenu-width: 12em;
   $horizontal-bar-mode: $large-screen;
 
-  background-color: $navigation-background;
+  // background-color: $navigation-background;
+  background:#fff;
+  // @include background-image( url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSI1MCI+CjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0ZGRjlDRiIgZD0iTTE0LDMzTDAsMjVWOGwxNC04bDE0LDh2MTdMMTQsMzN2MTciPjwvcGF0aD4KPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjRkZGNkI4IiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xNCwwdjE3TDAsMjV2MTdsMTQsOGwxNC04VjI1bC0xNC04Ij48L3BhdGg+Cjwvc3ZnPg=="));
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSI1MCI+CjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZWQ5NCAiIGQ9Ik0xNCwzM0wwLDI1VjhsMTQtOGwxNCw4djE3TDE0LDMzdjE3Ij48L3BhdGg+CjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZjlkZSAgIiBzdHJva2Utd2lkdGg9IjIiIGQ9Ik0xNCwwdjE3TDAsMjV2MTdsMTQsOGwxNC04VjI1bC0xNC04Ij48L3BhdGg+Cjwvc3ZnPg==");
+  
   border-top: 5px solid $base-accent-color;
   min-height: $navigation-height;
   width: 100%;
