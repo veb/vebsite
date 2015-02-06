@@ -26,7 +26,8 @@ layout: default
 
 <div class="responsive-container container">
     <div class="grid-items">
-    {% for page in site.pages %}
+    {% assign pages = site.pages | sort:"weight"  %}
+    {% for page in pages %}
         {% if page.categories contains 'project' %}
             <a href="{{ page.path }}" class="grid-item">
                 <div class="ribbon-wrapper">

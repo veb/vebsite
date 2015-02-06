@@ -26,15 +26,16 @@ require(["jquery"], function($) {
 
 		var menuToggle = $('#js-mobile-menu').unbind();
 		$('#js-navigation-menu').removeClass("show");
+		menuToggle.text("MENU");
 
 		menuToggle.on('click', function(e) {
 			e.preventDefault();
 			$('#js-navigation-menu').slideToggle(function(){
 				if($('#js-navigation-menu').is(':hidden')) {
-					menuToggle.removeClass('close');
+					menuToggle.text("MENU");
 					$('#js-navigation-menu').removeAttr('style');
 				} else {
-					menuToggle.addClass('close');
+					menuToggle.text("COLLAPSE");
 				}
 			});
 		});
