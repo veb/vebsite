@@ -2,7 +2,7 @@
 layout: page
 title: Toribash
 description: Online violence simulator/game
-thumbnail: /assets/images/gridicons/toribash.jpg
+thumbnail: assets/images/gridicons/toribash.jpg
 background: #FFFFFF
 type: web
 categories: project
@@ -10,8 +10,8 @@ categories: project
 <br>
 <section class="responsive-container-single">
     	<article>
-    		<img class="bullet-img" src="/assets/images/gridicons/toribash.jpg" alt="toribash logo">
-            <div class="bullet-content">
+    		<img class="bullet-img" src="{{ page.thumbnail | prepend: "/" | to_absurl}}" alt="">
+            <div class="bullet-content" id="page-{{ page.title }}">
                 <h2>Toribash</h2>
                 <p><a href="http://toribash.com/"><i class="fa fa-fw fa-globe"></i>www.toribash.com</a></p>
                 <p>A veritable longrunner, Toribash is an odd story in indie gaming, as it is <b>still</b> being played by thousands of players since its inception in early 2006.  Think of it as playing out kung-fu action scenes, with added strategy as it is also multiplayer and turn-based.  And you can customize nearly EVERYTHING about your character</p>

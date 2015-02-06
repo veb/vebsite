@@ -2,7 +2,7 @@
 layout: page
 title: Modern Sherlock
 description: Facebook community for the Sherlock BBC Programme
-thumbnail: /assets/images/gridicons/sherlock.jpg
+thumbnail: assets/images/gridicons/sherlock.jpg
 background: #FFFFFF
 type: web
 categories: project
@@ -10,8 +10,8 @@ categories: project
 <br>
 <section class="responsive-container-single">
     	<article>
-    		<img class="bullet-img" src="/assets/images/gridicons/sherlock.jpg" alt="toribash logo">
-            <div class="bullet-content">
+    		<img class="bullet-img" src="{{ page.thumbnail | prepend: "/" | to_absurl}}" alt="">
+            <div class="bullet-content" id="page-{{ page.title }}">
                 <h2>Modern Sherlock</h2>
                 <p><a href="https://www.facebook.com/ModernSherlock"><i class="fa fa-fw fa-facebook-square"></i>facebook.com/ModernSherlock</a></p>
                 <p>A Facebook page dedicated to the Victorian sleuth and part time Iron Man...</p>

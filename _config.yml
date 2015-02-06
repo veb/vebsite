@@ -3,8 +3,14 @@ title: veb co nz
 email: e-male@veb.co.nz.dev
 description: > # this means to ignore newlines until "baseurl:"
   Stuff for the web, made by VEB
+# baseurl: "index.php/site"
+# root: "site"
+# url: "http://in.veb.nz/" # the base hostname & protocol for your site
+
 baseurl: ""
-url: "http://veb.co.nz" # the base hostname & protocol for your site
+root: ""
+url: "" # the base hostname & protocol for your site
+
 twitter_username: actualbrain
 github_username:  actualbrain
 
@@ -22,3 +28,5 @@ gems: [font-awesome-sass]
 include: [".htpasswd", ".htaccess"]
 
 categories: [project, product, stuff, testimonial, wip]
+
+# destination: "/Users/rayarvin/Sites/nginx_sites/veb_iu/site"

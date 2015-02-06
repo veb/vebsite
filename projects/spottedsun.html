@@ -2,7 +2,7 @@
 layout: page
 title: Spotted Sun
 description: Code, Hacks and Other Nerdy Things
-thumbnail: /assets/images/gridicons/spottedsun-01.png
+thumbnail: assets/images/gridicons/spottedsun-01.png
 background: #FFFFFF
 type: web
 categories: project
@@ -10,8 +10,8 @@ categories: project
 <br>
 <section class="responsive-container-single">
     	<article>
-    		<img class="bullet-img" src="{{ page.thumbnail }}">
-            <div class="bullet-content">
+    		<img class="bullet-img" src="{{ page.thumbnail | prepend: "/" | to_absurl}}" alt="">
+            <div class="bullet-content" id="page-{{ page.title }}">
                 <h2></h2>
                 <p><a href="http://spottedsun.com/"><i class="fa fa-fw fa-globe"></i>spottedsun.com</a></p>
                 <p>Nerd Blog</p>

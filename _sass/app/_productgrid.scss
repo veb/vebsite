@@ -38,36 +38,10 @@
 
     @include position( relative, 0px 0 0 0px );
 
-    @include media($large-screen) {
+    @include media($medium-screen) {
       @include grid-item-columns($grid-item-columns);
     }
 
-//     @for $i from 1 to 5 { 
-// // assign colors from $grid-item-colors list
-//       &:nth-child(#{$i}) {
-//         background: 
-//             linear-gradient(
-//               rgba(64, 64, 64, 0.45), 
-//               rgba(64, 64, 64, 0.45)
-//             ),
-//             url(nth($grid-images, $i));
-//         background-repeat: no-repeat;
-//         background-position: center;
-//         background-size: cover;
-//         &:hover {
-//           background: 
-//             linear-gradient(
-//               rgba(64, 64, 64, 0.65), 
-//               rgba(64, 64, 64, 0.65)
-//             ),
-//             /* bottom, image */
-//             url(nth($grid-images, $i));
-//           background-repeat: no-repeat;
-//           background-position: center;
-//           background-size: cover;
-//         }
-//       }
-//     }
   }
 
   .ribbon-wrapper {

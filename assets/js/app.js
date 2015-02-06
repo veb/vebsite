@@ -1,7 +1,6 @@
 requirejs.config({
-    "baseUrl": "/assets/js/lib",
     "paths": {
-      "app": "/assets/js/app"
+      "app": "app"
     },
     "jquery": "jquery",
     "shim": {
@@ -11,4 +10,3 @@ requirejs.config({
 
 // Load the main app module to start the app
 requirejs(["app/main"]);
-

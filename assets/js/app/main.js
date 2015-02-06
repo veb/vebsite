@@ -4,17 +4,17 @@ require(["jquery"], function($) {
 		$('.grid-item').each(function(i) {
 			var imgSrc = $(this).children('img').attr("src");
 			$(this).css({
-				background: " -moz-linear-gradient(top, rgba(64,64,64,0.45) 0%, rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center"
+				background: " -moz-linear-gradient(top, rgba(64,64,64,0.45) 0%, rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center no-repeat"
 				}).css({
-				background: " -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,64,64,0.45)), color-stop(100%,rgba(64,64,64,0.45))), url("+ imgSrc +") center"
+				background: " -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,64,64,0.45)), color-stop(100%,rgba(64,64,64,0.45))), url("+ imgSrc +") center no-repeat"
 				}).css({
-				background: " -webkit-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center"
+				background: " -webkit-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center no-repeat"
 				}).css({
-				background: " -o-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center"
+				background: " -o-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center no-repeat"
 				}).css({
-				background: " -ms-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center"
+				background: " -ms-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center no-repeat"
 				}).css({
-				background: " linear-gradient(to bottom, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center"
+				background: " linear-gradient(to bottom, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url("+ imgSrc +") center no-repeat"
 				// }).css({
 				// background: "url("+ imgSrc +")"
 				}).css({

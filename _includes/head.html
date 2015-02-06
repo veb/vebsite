@@ -27,7 +27,7 @@
   <meta content="{{ site.url }}/about/" property="article:author">
 {% endif %}
 {% if page.image %}
-  <meta content="/assets/images/posts/{{ page.image }}" property="og:image">
+  <meta content="assets/images/posts/{{ page.image }}" property="og:image">
 {% else %}
   <meta content="http://veb.co.nz/assets/images/veeb-02.png" property="og:image">
 {% endif %}
@@ -43,11 +43,12 @@
 {% endif %}
 
 
-
+    
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
 
-    <script data-main="/assets/js/app" src="/assets/js/lib/require.js"></script>
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <script data-main="{{ '/assets/js/app' | to_absurl }}" src="{{ '/assets/js/lib/require.js' | to_absurl }}"></script>
+
+    <link rel="stylesheet" href="{{ '/css/main.css' | to_absurl }}" >
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

@@ -1,7 +1,7 @@
 .hero {
-  $hero-background-top: #ffee00; 
-  $hero-background-bottom: #993300;
-  $hero-color: white;
+  $hero-background-top: white; 
+  $hero-background-bottom: white;
+  $hero-color: #000;
   $gradient-angle: 10deg;
 
   @include background(linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
@@ -30,20 +30,19 @@
     }
 
     .hero-copy {
-      text-align: center;
+      text-align: left;
       
       h1 {
-        font-size: 1.6em;
+        font-size: 2.5em;
         margin-bottom: .5em;
 
         @include media($large-screen) {
-          font-size: 1.8em;
+          font-size: 5em;
         }
       }
 
       p {
         font-family: $alt-sans-serif;
-        margin: auto;
         margin-bottom: 3em; 
         font-weight: 200;
         line-height: 1.4em;

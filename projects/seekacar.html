@@ -2,7 +2,7 @@
 layout: page
 title: Seek a Car
 description: Realtime car booking for New Zealand
-thumbnail: /assets/images/gridicons/seekacar-01.png
+thumbnail: assets/images/gridicons/seekacar-01.png
 background: #FFFFFF
 type: web
 categories: project wip
@@ -10,8 +10,8 @@ categories: project wip
 <br>
 <section class="responsive-container-single">
     	<article>
-    		<img class="bullet-img" src="{{ page.thumbnail }}" alt="toribash logo">
-            <div class="bullet-content">
+    		<img class="bullet-img" src="{{ page.thumbnail | prepend: "/" | to_absurl}}" alt="">
+            <div class="bullet-content" id="page-{{ page.title }}">
                 <h2></h2>
                 <p><a href="http://seekacar.co.nz/"><i class="fa fa-fw fa-globe"></i>www.seekacar.nz</a></p>
                 <p>Realtime car booking</p>

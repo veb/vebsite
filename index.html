@@ -3,39 +3,33 @@ layout: default
 ---
 
 
-<!-- {% include herounit.html %} -->
+{% include herounit.html %}
 
-<div id="index-bullets" class="container">
+<div id="index-bullets iu-skip" class="responsive-container">
     <ul class="bullets">
-        <li class="bullet two-col-bullet">
-            <span class="fa-stack fa-2x bullet-icon bullet-icon-1">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
-            </span>
-            <div class="bullet-content">
+        <li class="bullet three-col-bullet">
+            <div class="bullet-content" id="bullet-mobileApp">
+                <div class="bullet-container">
+                    <div class="bullet-icon bullet-icon-1"></div>    
+                </div>
                 <h2>Mobile Apps</h2>
                 <p>We build apps with a focus on usability first.  And aesthetic pleasantness.  With a sprinkling of innovation here and there.  We build apps we would love to use ourselves</p>
             </div>
         </li>
-        <li class="bullet two-col-bullet">
-            <span class="fa-stack fa-2x bullet-icon bullet-icon-2">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
-            </span>
-            <div class="bullet-content">
+        <li class="bullet three-col-bullet">
+            <div class="bullet-content" id="bullet-webApp">
+                <div class="bullet-container">
+                    <div class="bullet-icon bullet-icon-2"></div>    
+                </div>
                 <h2>Web Apps</h2>
                 <p>We build clean, maintainable and forward thinking sites using equally clean, maintainable and forward thinking platforms and technologies.  If you'd like to seek the cutting edge, we're your guys.  We know some knife guys who can help your edge seeking as well!</p>
             </div>
         </li>
-    </ul>
-
-    <ul class="bullets">
-        <li class="bullet two-col-bullet">
-            <span class="fa-stack fa-2x bullet-icon bullet-icon-3">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-wheelchair fa-stack-1x fa-inverse"></i>
-            </span>
-            <div class="bullet-content">
+        <li class="bullet three-col-bullet">
+            <div class="bullet-content" id="bullet-accessibleApp">
+                <div class="bullet-container">
+                    <div class="bullet-icon bullet-icon-3"></div>    
+                </div>
                 <h2>Accessible Apps</h2>
                 <p>Mobile first design creates a more pleasent view and ease of use. This is extremely important for people with vision problems. No need to zoom in and out - we've got that covered for you. Nothing makes us more annoyed than some website that looks awful on mobile. </p>
             </div>
@@ -44,20 +38,26 @@ layout: default
 </div>
 
 
-<div class="container">
-<div class="grid-items">
-{% for page in site.pages %}
-    {% if page.categories contains 'project' %}
-        <a href="{{ page.url }}" class="grid-item">
-            <div class="ribbon-wrapper">
-                <div class="ribbon ribbon-web">WEB</div>
-            </div>
-            <img src="{{ page.thumbnail }}" alt="">
-            <h1>{{ page.title }}</h1>
-            <p>{{ page.description }}</p>
-        </a>
-    {% endif %}
-{% endfor %} <!-- page -->
+<div class="responsive-container container">
+    <div class="grid-items">
+    {% for page in site.pages %}
+        {% if page.categories contains 'project' %}
+            <a href="{{ page.path }}" class="grid-item">
+                <div class="ribbon-wrapper">
+                    <div class="ribbon ribbon-web">WEB</div>
+                </div>
+                <img src="{{ page.thumbnail }}" alt="">
+                <div id="griditem-{{ page.title }}">
+                <h1>{{ page.title }}</h1>
+                <p>{{ page.description }}</p>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %} <!-- page -->
+
+    </div>
 </div>
+
+<div class="container navigation-menu">
 </div>
 
