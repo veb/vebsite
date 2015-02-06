@@ -1,6 +1,6 @@
 .footer {
-  $footer-background: #333;
-  $footer-color: white;
+  $footer-background: darken($brand-color, 2);
+  $footer-color: black;
   $footer-link-color: transparentize($footer-color, .6);
   $footer-disclaimer-color: transparentize($footer-color, .6);
 
@@ -19,22 +19,29 @@
 
   .footer-links {
     @include clearfix;
+    @include outer-container;
     margin-bottom: $base-spacing;
-
-    @include media($medium-screen) {
-      @include shift(3);
-    }
   }
 
-  ul {
+  ul.footer-left {
     margin-bottom: $base-spacing*2;
 
     @include media($medium-screen) {
       @include span-columns(3);
-      @include omega(3n);
       @include clearfix;
     }
   }
+
+  ul.footer-right {
+    margin-bottom: $base-spacing*2;
+
+      @include media($medium-screen) {
+        @include span-columns(9);
+        @include omega();
+        @include clearfix;
+      }
+  }
+  
 
   li {
     text-align: center;

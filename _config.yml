@@ -29,4 +29,4 @@ include: [".htpasswd", ".htaccess"]
 
 categories: [project, product, stuff, testimonial, wip]
 
-# destination: "/Users/rayarvin/Sites/nginx_sites/veb_iu/site"
+destination: "/Users/rayarvin/Sites/nginx_sites/veb_iu/site"
