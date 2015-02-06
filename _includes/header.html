@@ -1,7 +1,7 @@
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
     <a href="{{ '/index.html' | to_absurl }}" class="logo">
-      <svg xmlns="http://www.w3.org/2000/svg" width="200" height="80" viewBox="0 0 480 244">
+      <svg xmlns="http://www.w3.org/2000/svg" width="140" height="80" viewBox="0 0 480 244">
         <path fill="#fff" 
         stroke="" stroke-width="2"
       stroke-linecap="round"  stroke-linejoin="round"
@@ -76,19 +76,9 @@
 
     <nav role="navigation">
       <ul id="js-navigation-menu" class="navigation-menu show">
-      <li class="nav-link"><a href="{{ '/aboutus.html' | to_absurl }}">About Us</a></li>
+      <li class="nav-link"><a href="{{ '/about.html' | to_absurl }}">About Us</a></li>
       <li class="nav-link"><a href="{{ '/testimonials.html' | to_absurl }}">Testimonials</a></li>
       <li class="nav-link"><a href="{{ '/contactus.html' | to_absurl }}">Contact</a></li>
-
-        <li class="nav-link more"><a href="javascript:void(0)">Stuff</a>
-          <ul class="submenu">
-{% for page in site.pages %}
-    {% if page.categories contains 'menu' %}
-        <li class="nav-link"><a href="{{ page.url | prepend: "" | to_absurl }}">{{ page.title }}</a></li>
-    {% endif %}
-{% endfor %}            
-          </ul>
-        </li>
       </ul>
     </nav>
 </header>

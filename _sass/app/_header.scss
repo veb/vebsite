@@ -45,8 +45,6 @@ header.navigation {
   .logo {
     float: left;
     max-height: $navigation-height;
-    padding-left: $navigation-padding;
-    padding-right: 2em;
 
     img {
       max-height: $navigation-height;
@@ -60,7 +58,7 @@ header.navigation {
     color: $navigation-color;
     display: block;
     float: right;
-    line-height: $navigation-height/2;
+    line-height: 5em;
     margin: 0;
     padding-right: 1em;
     text-transform: uppercase;
