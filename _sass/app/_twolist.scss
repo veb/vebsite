@@ -2,13 +2,18 @@
   $icon-bullet-size: 3.5em;
 
   font-size: 1.1em;
-  text-align: center;
+  text-align: left;
   line-height: 1.5em;
   overflow: auto;
   padding-top: 2em;
   padding-bottom: 5em;
   margin-bottom: $base-line-height;
   
+  @include media( $medium-screen ){
+    padding-top: 10em;
+    padding-bottom: 10em;
+  }
+
   .two-list-item {
     @include media($medium-screen) {
       @include span-columns(6);
