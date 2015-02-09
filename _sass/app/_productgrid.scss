@@ -51,16 +51,16 @@
     overflow: hidden;
     position: absolute;
     top: -1px;
-    right: -1px;
+    left: -1px;
 
     .ribbon {
       font-size: .8em;
       font-weight: 800;
       text-align: center;
-      @include transform(rotate(45deg));
+      @include transform(rotate(-45deg));
       position: relative;
       padding: 2px 7px;
-      left: -5px;
+      left: -30px;
       top: 15px;
       width: 120px;
       background-color: $ribbon-background;

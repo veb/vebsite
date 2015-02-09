@@ -1,0 +1,26 @@
+html, body
+  margin: 0
+  padding: 0
+  height: 100%
+  
+.site-wrapper
+  min-height: 100%
+  position: relative
+
+.sticky-footer
+  width: 100%
+  height: 3em
+  position: fixed
+  bottom: 0
+  right: 0
+  background: $grey-color-light
+  text-align: right
+
+  @include media( $medium-screen )
+    width: auto
+
+  li
+    padding: 0 1em
+    display: inline
+    text-align: center
+    line-height: 3em

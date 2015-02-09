@@ -72,7 +72,7 @@ require(["jquery"], function($) {
 		    }
 		});
 
-		$('#invert').click(function() {
+		$('.invert').click(function() {
 			if ($('html').hasClass('html-inverted')) {
 				$('html').removeClass('html-inverted');
 			} else {
@@ -80,7 +80,7 @@ require(["jquery"], function($) {
 			}
 		});
 
-		$('#embiggen').click(function() {
+		$('.embiggen').click(function() {
 			if ($('body').hasClass('body-embiggened')) {
 				$('body').removeClass('body-embiggened');
 			} else {

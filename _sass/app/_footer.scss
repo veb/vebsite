@@ -6,8 +6,15 @@
 
   background: $footer-background;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSI1MCI+CjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y0ZGQ2ZSIgZD0iTTE0LDMzTDAsMjVWOGwxNC04bDE0LDh2MTdMMTQsMzN2MTciPjwvcGF0aD4KPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjRkYTViICIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTQsMHYxN0wwLDI1djE3bDE0LDhsMTQtOFYyNWwtMTQtOCI+PC9wYXRoPgo8L3N2Zz4=");
-  padding: $base-spacing*2 $gutter;
+  padding: $base-spacing $gutter;
   width: 100%;
+  margin-bottom: 3em;
+  @include media( $medium-screen ) {
+    margin-bottom: 0em;
+  }
+  @include media( $large-screen ) {
+    margin-bottom: 0em;
+  }
 
   .footer-logo {
     text-align: center;
@@ -22,24 +29,27 @@
     @include clearfix;
     @include outer-container;
     margin-bottom: $base-spacing;
+    @include media( $medium-screen ) {
+      margin-bottom: 0;
+    }
   }
 
   ul.footer-left {
     margin-bottom: $base-spacing*2;
-
     @include media($medium-screen) {
       @include span-columns(3);
       @include clearfix;
+      margin-bottom: 0;
     }
   }
 
   ul.footer-right {
     margin-bottom: $base-spacing*2;
-
       @include media($medium-screen) {
         @include span-columns(9);
         @include omega();
         @include clearfix;
+        margin-bottom: 0;
       }
   }
   
