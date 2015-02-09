@@ -24,15 +24,17 @@ weight: 8
                     <li>Instead of watering twice a day (manually), the plants need to be watered more</li>
                     <li>High temperatures and sunlight pose a problem too, as the plants are completely sheltered from cold wind
                         and therefore ambient lighting is a factor that must be taken into consideration</li>
+                    <li>No proper record keeping</li>
                  </ul>
-                 <p>Most greenhouses and such have similar problems, however commericially systems can range over $100,000 NZD to detect 
+                 <p>Most greenhouses and such have similar problems, however commercial systems can range over $100,000 NZD to detect 
                     the problems that {{ page.title }} were having. As a small farmers market business, commercial systems were simply out
                     of their price range.</p>
                  <p></p>
-                 <p>Using a <a href="#">Tessel board</a> we were able to create a cheap yet efficient solution to their problems.</p>
+                 <p><a href="https://tessel.io/"><img src="https://s3.amazonaws.com/technicalmachine-assets/technical-io/tessel-logo-horizontal.svg" /></a></p>
+                 <p>Using a <a href="https://tessel.io/">Tessel board</a> we were able to create a cheap yet efficient solution to their problems.</p>
                  <ul>
                     <li>Using the Ambient and Temperature module, we recorded the output of each greenhouse and tunnel house to a (responsive)
-                        website.</li>
+                        website based on <a href="#">MeteorJS</a>.</li>
                     <li>After the intial testing and gathering of baseline data we added a Servo module to control both the watering and fans</li>
                     <li>Finally, we ended the prototype by allowing {{ page.title }} to add in automatic alerts:</li>
                     <ul>
@@ -42,14 +44,19 @@ weight: 8
                             and pH that their plants needed to flourish.</li>
                      </ul>
                   </ul>
+                  <p><img src="/assets/images/keenio.svg" /></p>
+                  <p>We did find some limitations using MeteorJS, and so we looked at <a href="#">KeenIO</a> and it simply blew us away with what we
+                     were able to do, especially in terms of analytics for us, and the client.</p>
+                  <p><img src="/assets/images/keenio_tessel.png" /></p>
                   <p>This system was a prototype, and surpassed the expectations of the client. For example, they managed to be able to sell new potatoes
                      more than two months before anyone else in Otago could grow them. Even before big commercial greenhouse businesses.</p>  
 
-<blockquote class="receiver">
-    <p>It's really astonishing how such a small piece of technology can give us the ability to focus on what we love rather than maintenance</p>
-</p>
-	<h6>- {{ page.title }}, Dunedin, New Zealand</h6>
-</blockquote>
+                <blockquote class="receiver">
+                   <p>It's really astonishing how such a small piece of technology can give us the ability to focus on what we love rather than maintenance</p>
+                </p>
+                    <h6>- {{ page.title }}, Dunedin, New Zealand</h6>
+                </blockquote>
+                
             </div>
     	</article>
 </section>
