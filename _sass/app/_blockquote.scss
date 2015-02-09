@@ -1,0 +1,53 @@
+@mixin bordered-speech-bubble($color: $pale-green, $point: down, $border-color: black, $border-size: 20, $triangle-size: 50) {
+  $top: 100%;
+  $left: 50%;
+  $right: null;
+  $triangle-direction: up-left;
+  $border-position: bottom;
+  $skew: '-';
+  $calculate-triangle-placement: -#{$triangle-size + $border-size - 1}px;
+  @if $point == up {
+    $top: $calculate-triangle-placement;
+    $border-position: top;
+    $triangle-direction: down-left;
+    $skew: '';
+  } @else if $point == left {
+    $top: 50%;
+    $left: $calculate-triangle-placement;
+    $border-position: left;
+    $triangle-direction: down-right;
+    $skew: null;
+  } @else if $point == right {
+    $top: 50%;
+    $left: null;
+    $right: $calculate-triangle-placement;
+    $border-position: right;
+    $triangle-direction: down-left;
+    $skew: null;
+  }
+  @if $border-size == 0 { $border-color: $color; }
+  background-color: $color;
+  border-#{$border-position}: #{$border-size}px solid $border-color;
+  border-radius: 25px;
+  width: 80%;
+  margin: 2px auto;
+  padding: 40px 10px;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: $top;
+    @if $left != null { left: $left; }
+    @if $right != null { right: $right; }
+    @include triangle(#{$triangle-size}px, $border-color, #{$triangle-direction});
+    @if $skew != null { @include transform(skewX(#{$skew}15deg)); }
+  }
+}
+
+blockquote.sender {
+	@include bordered-speech-bubble($color: #eee, $point: left, $triangle-size: 25);
+}
+blockquote.receiver {
+	@include bordered-speech-bubble($color: #eee, $point: right, $triangle-size: 25);
+}
