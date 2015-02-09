@@ -1,0 +1,56 @@
+---
+layout: page
+title: Terracotta Plants
+description: Smart tunnel house automation
+thumbnail: assets/images/gridicons/meteor.png
+background: #FFFFFF
+type: hardware
+categories: project
+weight: 8
+---
+<br>
+<section class="responsive-container-single">
+    	<article>
+    		<img class="bullet-img" src="{{ page.thumbnail | prepend: "/" | to_absurl}}" alt="">
+            <div class="bullet-content" id="page-{{ page.title }}">
+                <h2>{{ page.title }}</h2>
+                <h3>{{ page.description }}</h3>
+                <p>{{ page.title }} rely on tunnel houses and greenhouses to grow both plants and vegetables for the
+                    <a href="http://www.otagofarmersmarket.org.nz/">Otago Farmers Market</a>. As the weather in Dunedin, New Zealand 
+                    can be extremely unpredictable most of the time the problem was how to monitor, yet control the 'artificial climate'.</p>
+                 <p>Certain problems persist:</p>
+                 <ul>
+                    <li>With high temperatures inside, airflow needs to increase</li>
+                    <li>Instead of watering twice a day (manually), the plants need to be watered more</li>
+                    <li>High temperatures and sunlight pose a problem too, as the plants are completely sheltered from cold wind
+                        and therefore ambient lighting is a factor that must be taken into consideration</li>
+                 </ul>
+                 <p>Most greenhouses and such have similar problems, however commericially systems can range over $100,000 NZD to detect 
+                    the problems that {{ page.title }} were having. As a small farmers market business, commercial systems were simply out
+                    of their price range.</p>
+                 <p></p>
+                 <p>Using a <a href="#">Tessel board</a> we were able to create a cheap yet efficient solution to their problems.</p>
+                 <ul>
+                    <li>Using the Ambient and Temperature module, we recorded the output of each greenhouse and tunnel house to a (responsive)
+                        website.</li>
+                    <li>After the intial testing and gathering of baseline data we added a Servo module to control both the watering and fans</li>
+                    <li>Finally, we ended the prototype by allowing {{ page.title }} to add in automatic alerts:</li>
+                    <ul>
+                        <li>They could set filters which would turn the watering system on at certain ambient lighting and inside temperature.</li>
+                        <li>As the website was created with mobile-responsiveness in mind, they were able to keep track of watering remotely</li>
+                        <li>Because everything was logged automatically to a database, they were able to tell which temperature range
+                            and pH that their plants needed to flourish.</li>
+                     </ul>
+                  </ul>
+                  <p>This system was a prototype, and surpassed the expectations of the client. For example, they managed to be able to sell new potatoes
+                     more than two months before anyone else in Otago could grow them. Even before big commercial greenhouse businesses.</p>  
+
+<blockquote class="receiver">
+    <p>It's really astonishing how such a small piece of technology can give us the ability to focus on what we love rather than maintenance</p>
+</p>
+	<h6>- {{ page.title }}, Dunedin, New Zealand</h6>
+</blockquote>
+            </div>
+    	</article>
+</section>
+
