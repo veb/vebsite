@@ -31,7 +31,7 @@ layout: default
         {% if page.categories contains 'project' %}
             <a href="{{ page.path }}" class="grid-item">
                 <div class="ribbon-wrapper">
-                    <div class="ribbon ribbon-web">WEB</div>
+                    <div class="ribbon ribbon-{{page.type}}">{{page.type}}</div>
                 </div>
                 <img src="{{ page.thumbnail }}" alt="">
                 <div id="griditem-{{ page.title }}">

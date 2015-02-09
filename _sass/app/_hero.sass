@@ -1,0 +1,14 @@
+.hero-header
+  @include media( $medium-screen )
+    @include span-columns(10)
+    @include shift(1)
+
+  h3
+    font-size: 2.25em
+    @include media( $medium-screen )
+      padding-bottom: 1.5em
+      padding-top: 1.5em
+  p
+    font-size: 1.5em
+    line-height: 1.5em
+    font-weight: 200
