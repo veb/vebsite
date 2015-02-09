@@ -1,8 +1,8 @@
 .footer {
   $footer-background: darken($brand-color, 2);
   $footer-color: black;
-  $footer-link-color: transparentize($footer-color, .6);
-  $footer-disclaimer-color: transparentize($footer-color, .6);
+  $footer-link-color: transparentize($footer-color, .4);
+  $footer-disclaimer-color: transparentize($footer-color, .2);
 
   background: $footer-background;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSI1MCI+CjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y0ZGQ2ZSIgZD0iTTE0LDMzTDAsMjVWOGwxNC04bDE0LDh2MTdMMTQsMzN2MTciPjwvcGF0aD4KPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjRkYTViICIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTQsMHYxN0wwLDI1djE3bDE0LDhsMTQtOFYyNWwtMTQtOCI+PC9wYXRoPgo8L3N2Zz4=");
@@ -55,6 +55,7 @@
   
 
   li {
+    font-weight: 400;
     text-align: center;
     @include media($medium-screen) {
       text-align: left;
