@@ -18,8 +18,24 @@ weight: 8
                 <p>{{ page.description }}</p>
                 <p>Lorem ipsum Ad exercitation Ut Duis cupidatat dolor reprehenderit sed tempor dolor dolor aliquip ut ullamco mollit nisi exercitation ut.
                 </p>
-
-{% gist 674f2756b32fa4332d3f %}
             </div>
+{% highlight java %}
+public void onPictureTaken(byte[] bytes, Camera camera) {
+    mTakePictureBtn.setEnabled(true);
+    Bitmap picture = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+
+    // rotates the image to portrait
+    Matrix matrix = new Matrix();
+    matrix.postRotate(90);
+    picture = Bitmap.createBitmap(picture, 0, 0, picture.getWidth(), picture.getHeight(), matrix, true);
+
+    String path = MediaStore.Images.Media.insertImage(getActivity().getContentResolver(), picture, "", "");
+    Uri contentUri = Uri.parse(path);
+    Image image = getImageFromContentUri(contentUri);
+    ((ImagePickerActivity) getActivity()).addImage(image);
+
+    mCamera.startPreview();
+}
+{% endhighlight %}
     	</article>
 </section>
