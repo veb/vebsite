@@ -1,0 +1,33 @@
+.avatars {
+  .avatar {
+    text-align: center;
+    padding: 2em;
+
+    @include media($medium-screen) {
+      @include span-columns(4);
+      @include omega(3n);
+    }
+
+    .avatar-img {
+      display: block;
+      height: 6em;
+      margin: auto;
+      margin-bottom: 1em;
+    }
+
+    h1 {
+      font-size: 1.3em;
+      margin-bottom: .4em;
+    }
+
+    h4 {
+      font-size: 1.2em;
+      margin-bottom: .4em;
+    }
+
+    p {
+      margin: auto;
+      font-weight: 400;
+    }
+  }
+}

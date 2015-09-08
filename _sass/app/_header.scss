@@ -6,6 +6,7 @@ header.navigation {
   $dark-gray: #333;
   $large-screen: em(860) !default;
   
+
   a {
     text-decoration: none;
   }
@@ -33,6 +34,7 @@ header.navigation {
   min-height: $navigation-height;
   width: 100%;
   z-index: 999;
+  @include position( fixed, 0px null null 0px );
 
   .navigation-wrapper {
     @include outer-container;

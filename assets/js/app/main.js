@@ -101,3 +101,18 @@ require(["jquery","owl.carousel"], function($) {
 	  	});
   	});
 });
+
+require(["jquery", "jquery.slimscroll", "jquery.fullpage"], function($) {
+	console.log("fullpage loaded");
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			responsiveWidth: 800,
+			navigation: true,
+			navigationPosition: 'right',
+			sectionsColor: ['#fff', '#fff', '#fff'],
+            anchors: ['first_page', 'second_page', 'third_page'],
+			css3: true,
+			scrollOverflow: true
+		});
+	});	
+});

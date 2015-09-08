@@ -2,49 +2,66 @@
 layout: default 
 ---
 
+<div id="fullpage">
 
-{% include whatwedo.html %}
-
-<!--<div id="index-bullets iu-skip" class="responsive-container container">
-    <div class="two-list-container">
-        <h3>What we do</h3>
-        <ul id="two-list-content" class="two-list">
-            <li class="two-list-item">Content Management Systems (CMS)</li>
-            <li class="two-list-item">Website Design</li>
-            <li class="two-list-item">Branding</li>
-            <li class="two-list-item">Database Development</li>
-            <li class="two-list-item">Ecommerce Systems</li>
-            <li class="two-list-item">Real Estate Systems</li>
-            <li class="two-list-item">Trademe.co.nz Data Importing</li>
-            <li class="two-list-item">Realestate.co.nz Data Importing</li>
-            <li class="two-list-item">Customer Focused</li>
-            <li class="two-list-item">Consultancy and Advice Service</li>
-            <li class="two-list-item">Hosting Services</li>
-        </ul>
+    <div class="section" id="">
+        {% include whatwedo.html %}
     </div>
-</div> -->
 
-<div class="responsive-container container">
-    <div class="grid-items">
-    {% assign pages = site.pages | sort:"weight"  %}
-    {% for page in pages %}
-        {% if page.categories contains 'project' %}
-            <a href="{{ page.path }}" class="grid-item">
-                <div class="ribbon-wrapper">
-                    <div class="ribbon ribbon-{{page.type}}">{{page.type}}</div>
-                </div>
-                <img src="{{ page.thumbnail }}" alt="">
-                <div id="griditem-{{ page.title }}">
-                <h1>{{ page.title }}</h1>
-                <p>{{ page.description }}</p>
-                </div>
-            </a>
-        {% endif %}
-    {% endfor %} <!-- page -->
+    <div class="section">
+        <div class="responsive-container container">
+            <div class="grid-items">
+            {% assign pages = site.pages | sort:"weight"  %}
+            {% for page in pages %}
+                {% if page.categories contains 'project' %}
+                    <a href="{{ page.path }}" class="grid-item">
+                        <div class="ribbon-wrapper">
+                            <div class="ribbon ribbon-{{page.type}}">{{page.type}}</div>
+                        </div>
+                        <img src="{{ page.thumbnail }}" alt="">
+                        <div id="griditem-{{ page.title }}">
+                        <h1>{{ page.title }}</h1>
+                        <p>{{ page.description }}</p>
+                        </div>
+                    </a>
+                {% endif %}
+            {% endfor %}
+            </div>
+        </div>
+    </div>
 
+    <div class="section">
+        <div class="responsive-container container avatars">
+            {% assign profiles = site.pages | sort:"weight" %}
+            {% for profile in profiles %}
+            {% if profile.categories contains 'profile' %}
+            <div class="avatar">
+                <img class="avatar-img" src="{{ profile.avatar }}">
+                {% if profile.twitter %}
+                <a href="http://twitter.com/{{ profile.twitter }}">{% icon fa-twitter-square fa-lg%}</a>
+                {% endif %}
+                {% if profile.instagram %}
+                <a href="http://instagram.com/{{ profile.instagram }}">{% icon fa-instagram fa-lg%}</a>
+                {% endif %}
+                {% if profile.linkedin %}
+                <a href="{{ profile.linkedin }}">{% icon fa-linkedin-square fa-lg%}</a>
+                {% endif %}
+                {% if profile.email %}
+                <a href="mailto:{{ profile.email }}">{% icon fa-envelope-square fa-lg%}</a>
+                {% endif %}
+                {% if profile.github %}
+                <a href="http://github.com/{{ profile.github }}">{% icon fa-github-square fa-lg%}</a>
+                {% endif %}
+                {% if profile.cv %}
+                <a href="{{ profile.cv }}">{% icon fa-file-pdf-o fa-lg%}</a>
+                {% endif %}
+                <h3>{{ profile.fullname }}</h3>
+                <h4>{{ profile.title }}</h4>
+
+                <p>{{ profile.description }}</p>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
     </div>
 </div>
-
-<div class="container navigation-menu">
-</div>
-
