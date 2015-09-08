@@ -4,6 +4,7 @@
   $footer-link-color: transparentize($footer-color, .4);
   $footer-disclaimer-color: transparentize($footer-color, .2);
 
+  text-align: center;
   background: $footer-background;
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSI1MCI+CjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y0ZGQ2ZSIgZD0iTTE0LDMzTDAsMjVWOGwxNC04bDE0LDh2MTdMMTQsMzN2MTciPjwvcGF0aD4KPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjRkYTViICIgc3Ryb2tlLXdpZHRoPSIyIiBkPSJNMTQsMHYxN0wwLDI1djE3bDE0LDhsMTQtOFYyNWwtMTQtOCI+PC9wYXRoPgo8L3N2Zz4=");
   padding: $base-spacing $gutter;
@@ -34,31 +35,12 @@
     }
   }
 
-  ul.footer-left {
-    margin-bottom: $base-spacing*2;
-    @include media($medium-screen) {
-      @include span-columns(3);
-      @include clearfix;
-      margin-bottom: 0;
-    }
-  }
-
-  ul.footer-right {
-    margin-bottom: $base-spacing*2;
-      @include media($medium-screen) {
-        @include span-columns(9);
-        @include omega();
-        @include clearfix;
-        margin-bottom: 0;
-      }
-  }
-  
 
   li {
     font-weight: 400;
     text-align: center;
     @include media($medium-screen) {
-      text-align: left;
+      text-align: center;
     }
   }
 
@@ -75,7 +57,7 @@
     font-size: 1em;
     font-weight: 800;
     margin-bottom: .4em;
-  }  
+  }
 
   li img.dunedinlogo {
     height: 4em;

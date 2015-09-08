@@ -4,9 +4,15 @@
     padding: 2em;
 
     @include media($medium-screen) {
+      @include span-columns(6);
+      @include omega();
+    }
+
+    @include media($large-screen) {
       @include span-columns(4);
       @include omega(3n);
     }
+
 
     .avatar-img {
       display: block;

@@ -5,8 +5,7 @@ requirejs.config({
     "jquery": "jquery",
     "shim": {
     	"owl.carousel": ['jquery'],
-    	"jquery.fullpage" : ['jquery'],
-        "jquery.slimscroll": ['jquery']
+    	"jquery.fullpage" : ['jquery']
     }
 });
 

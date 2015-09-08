@@ -10,6 +10,7 @@ layout: default
 
     <div class="section">
         <div class="responsive-container container">
+            <h2 class="page-title">Projects</h2>
             <div class="grid-items">
             {% assign pages = site.pages | sort:"weight"  %}
             {% for page in pages %}
@@ -31,37 +32,40 @@ layout: default
     </div>
 
     <div class="section">
-        <div class="responsive-container container avatars">
-            {% assign profiles = site.pages | sort:"weight" %}
-            {% for profile in profiles %}
-            {% if profile.categories contains 'profile' %}
-            <div class="avatar">
-                <img class="avatar-img" src="{{ profile.avatar }}">
-                {% if profile.twitter %}
-                <a href="http://twitter.com/{{ profile.twitter }}">{% icon fa-twitter-square fa-lg%}</a>
-                {% endif %}
-                {% if profile.instagram %}
-                <a href="http://instagram.com/{{ profile.instagram }}">{% icon fa-instagram fa-lg%}</a>
-                {% endif %}
-                {% if profile.linkedin %}
-                <a href="{{ profile.linkedin }}">{% icon fa-linkedin-square fa-lg%}</a>
-                {% endif %}
-                {% if profile.email %}
-                <a href="mailto:{{ profile.email }}">{% icon fa-envelope-square fa-lg%}</a>
-                {% endif %}
-                {% if profile.github %}
-                <a href="http://github.com/{{ profile.github }}">{% icon fa-github-square fa-lg%}</a>
-                {% endif %}
-                {% if profile.cv %}
-                <a href="{{ profile.cv }}">{% icon fa-file-pdf-o fa-lg%}</a>
-                {% endif %}
-                <h3>{{ profile.fullname }}</h3>
-                <h4>{{ profile.title }}</h4>
+        <div class="responsive-container container">
+            <h2 class="page-title">The Team</h2>
+            <div class="avatars">
+                {% assign profiles = site.pages | sort:"weight" %}
+                {% for profile in profiles %}
+                {% if profile.categories contains 'profile' %}
+                <div class="avatar">
+                    <img class="avatar-img" src="{{ profile.avatar }}">
+                    {% if profile.twitter %}
+                    <a href="http://twitter.com/{{ profile.twitter }}">{% icon fa-twitter-square fa-lg%}</a>
+                    {% endif %}
+                    {% if profile.instagram %}
+                    <a href="http://instagram.com/{{ profile.instagram }}">{% icon fa-instagram fa-lg%}</a>
+                    {% endif %}
+                    {% if profile.linkedin %}
+                    <a href="{{ profile.linkedin }}">{% icon fa-linkedin-square fa-lg%}</a>
+                    {% endif %}
+                    {% if profile.email %}
+                    <a href="mailto:{{ profile.email }}">{% icon fa-envelope-square fa-lg%}</a>
+                    {% endif %}
+                    {% if profile.github %}
+                    <a href="http://github.com/{{ profile.github }}">{% icon fa-github-square fa-lg%}</a>
+                    {% endif %}
+                    {% if profile.cv %}
+                    <a href="{{ profile.cv }}">{% icon fa-file-pdf-o fa-lg%}</a>
+                    {% endif %}
+                    <h3>{{ profile.fullname }}</h3>
+                    <h4>{{ profile.title }}</h4>
 
-                <p>{{ profile.description }}</p>
+                    <p>{{ profile.description }}</p>
+                </div>
+                {% endif %}
+                {% endfor %}
             </div>
-            {% endif %}
-            {% endfor %}
         </div>
     </div>
 </div>
