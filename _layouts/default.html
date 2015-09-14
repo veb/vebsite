@@ -15,6 +15,106 @@
 
     {% include footer.html %}
   </div>
+
+  <script>
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        menu: '#js-navigation-menu',
+        sectionsColor: ['#fff', '#fff', '#fff'],
+        anchors: ['about', 'projects', 'team'],
+        css3: true,
+        autoScrolling: false,
+        fitToSection: false,
+        fitToSectionDelay: 86400
+      });
+      var menuToggle = $('#js-mobile-menu').unbind();
+      $('#js-navigation-menu').removeClass("show");
+      menuToggle.text("MENU");
+
+      menuToggle.on('click', function (e) {
+        e.preventDefault();
+        $('#js-navigation-menu').slideToggle(function () {
+          if ($('#js-navigation-menu').is(':hidden')) {
+            menuToggle.text("MENU");
+            $('#js-navigation-menu').removeAttr('style');
+          } else {
+            menuToggle.text("COLLAPSE");
+          }
+        });
+      });
+
+      $('.accordion-tabs-minimal').each(function (index) {
+        $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
+      });
+
+      $('.accordion-tabs-minimal').on('click', 'li > a', function (event) {
+        if (!$(this).hasClass('is-active')) {
+          event.preventDefault();
+          var accordionTabs = $(this).closest('.accordion-tabs-minimal')
+          accordionTabs.find('.is-open').removeClass('is-open').hide();
+
+          $(this).next().toggleClass('is-open').toggle();
+          accordionTabs.find('.is-active').removeClass('is-active');
+          $(this).addClass('is-active');
+        } else {
+          event.preventDefault();
+        }
+      });
+
+
+      $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+
+      $('.invert').click(function () {
+        if ($('html').hasClass('html-inverted')) {
+          $('html').removeClass('html-inverted');
+        } else {
+          $('html').addClass('html-inverted');
+        }
+      });
+
+      $('.embiggen').click(function () {
+        if ($('body').hasClass('body-embiggened')) {
+          $('body').removeClass('body-embiggened');
+        } else {
+          $('body').addClass('body-embiggened');
+        }
+      });
+
+      $('.grid-item').each(function (i) {
+        var imgSrc = $(this).children('img').attr("src");
+        $(this).css({
+          background: " -moz-linear-gradient(top, rgba(64,64,64,0.45) 0%, rgba(64,64,64,0.45) 100%), url(" + imgSrc + ") center no-repeat"
+        }).css({
+          background: " -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,64,64,0.45)), color-stop(100%,rgba(64,64,64,0.45))), url(" + imgSrc + ") center no-repeat"
+        }).css({
+          background: " -webkit-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url(" + imgSrc + ") center no-repeat"
+        }).css({
+          background: " -o-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url(" + imgSrc + ") center no-repeat"
+        }).css({
+          background: " -ms-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url(" + imgSrc + ") center no-repeat"
+        }).css({
+          background: " linear-gradient(to bottom, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url(" + imgSrc + ") center no-repeat"
+          // }).css({
+          // background: "url("+ imgSrc +")"
+        }).css({
+          filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#73404040', endColorstr='#73404040',GradientType=0 )"
+        });
+      });
+
+    });
+
+  </script>
   </body>
 
 </html>

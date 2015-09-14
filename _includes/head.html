@@ -47,7 +47,9 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
 
-    <script data-main="{{ '/assets/js/app' | to_absurl }}" src="{{ '/assets/js/lib/require.js' | to_absurl }}"></script>
+    <script src="{{ '/assets/js/jquery.js' | to_absurl }}"></script>
+    <script src="{{ '/assets/js/jquery.fullpage.js' | to_absurl }}"></script>
+    <script src="{{ '/assets/js/jquery.slimscroll.js' | to_absurl }}"></script>
 
     <link rel="stylesheet" href="{{ '/css/main.css' | to_absurl }}" >
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

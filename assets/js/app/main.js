@@ -104,14 +104,5 @@ require(["jquery","owl.carousel"], function($) {
 
 require(["jquery", "jquery.fullpage"], function($) {
 	console.log("fullpage loaded");
-	$(document).ready(function() {
-		$('#fullpage').fullpage({
-            sectionsColor: ['#fff', '#fff', '#fff'],
-            anchors: ['about', 'projects', 'team'],
-			css3: true,
-            autoScrolling: false,
-            fitToSection: false,
-            fitToSectionDelay: 86400
-		});
-	});	
+
 });
