@@ -10,7 +10,9 @@ VEBsite
 	gem install refills
 	gem install neat
 	gem install font-awesome-sass
-	gem install jekyll `note: this may need RVM to install`
+	
+###### note: this may need RVM to install
+	gem install jekyll 
 	
 
 ## Running
