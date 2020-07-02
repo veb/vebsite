@@ -9,11 +9,13 @@ VEBsite
 	gem install bitters
 	gem install refills
 	gem install neat
-	gem install font-awesome-sass
-	
-###### note: this may need RVM to install
-	gem install jekyll 
-	
+  gem install font-awesome-sass -v 4.0.1
+	gem install jekyll
+=======
+
+##### Important: flask upgrade MAY be broken with celluloid upgrde, stick to 0.16.0 for now
+	gem install celluloid --version '=0.16.0'
+	gem uninstall celluloid --version '=0.17.1.2'
 
 ## Running
 	jekyll build --destination <destination>

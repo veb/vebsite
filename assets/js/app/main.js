@@ -101,3 +101,8 @@ require(["jquery","owl.carousel"], function($) {
 	  	});
   	});
 });
+
+require(["jquery", "jquery.fullpage"], function($) {
+	console.log("fullpage loaded");
+
+});
