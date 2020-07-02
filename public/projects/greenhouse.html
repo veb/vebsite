@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta content="veb - a software development studio in Dunedin, New Zealand" property="og:site_name">
+
+  <meta content="Terracotta Plants" property="og:title">
+
+
+  <meta content="article" property="og:type">
+
+
+  <meta content="Smart tunnel house automation" property="og:description">
+
+
+  <meta content="/projects/greenhouse.html" property="og:url">
+
+
+
+  <meta content="http://veb.co.nz/assets/images/veeb-02.png" property="og:image">
+
+
+  
+  <meta content="project" property="article:section">
+  
+
+
+
+
+    
+    <title>Terracotta Plants</title>
+    <meta name="description" content="Stuff for the web, made by VEB
+">
+
+    <script src="/assets/js/jquery.js"></script>
+    <script src="/assets/js/jquery.fullpage.js"></script>
+    <script src="/assets/js/jquery.slimscroll.js"></script>
+
+    <link rel="stylesheet" href="/css/main.css" >
+    <link rel="canonical" href="/projects/greenhouse.html">
+</head>
+
+
+  <body>
+  <div class="site-wrapper">
+    <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/index.html" class="logo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="140" height="80" viewBox="0 0 480 244">
+        <path fill="#fff"
+        stroke="" stroke-width="2"
+      stroke-linecap="round"  stroke-linejoin="round"
+      d="M328.222,63.822c8.32-3.266,16.606-4.758,25.193-4.396c29.659,1.256,53.872,24.17,56.789,53.734
+      c3.133,31.714-18.742,59.949-50.339,64.992c-32.836,5.24-64.281-18.545-68.209-51.564c-0.301-2.521-0.44-5.036-0.436-7.569
+      c0.008-30.115-0.006-60.229,0.008-90.347c0-9.654,7.066-17.518,16.627-18.564c9.187-1.004,17.712,5.115,19.976,14.284
+      c0.374,1.521,0.384,3.042,0.384,4.576C328.222,40.447,328.222,51.934,328.222,63.822z M373.461,119.13
+      c0.04-12.342-10.2-22.56-22.616-22.565c-12.265-0.003-22.465,10.072-22.623,22.344c-0.154,12.226,10.17,22.646,22.535,22.735
+      C363.1,141.729,373.424,131.499,373.461,119.13z"
+      />
+    <path fill="#FFDC00" d="M235.458,96.407c-8.818,0.576-17.319,8.646-19.173,17.824c-2.048,10.146,2.501,20.201,11.382,25.126
+      c9.113,5.056,19.737,3.638,27.524-3.683c10.895-10.229,27.879-5.669,31.357,8.529c1.645,6.713,0.061,12.877-4.979,17.667
+      c-17.068,16.225-37.286,21.589-59.777,14.949c-22.552-6.659-36.884-22.198-41.743-45.213
+      c-7.163-33.96,14.195-65.625,48.247-71.853c20.363-3.726,38.312,2.026,53.209,16.507c7.633,7.428,7.538,18.961,0.062,26.486
+      c-9.752,9.826-19.541,19.613-29.365,29.365c-7.414,7.373-19.034,7.406-26.313,0.164c-7.394-7.355-7.325-18.977,0.167-26.508
+      C229.104,102.708,232.177,99.672,235.458,96.407z M196.471,148.786l0.104-0.165l-0.157-0.023L196.471,148.786z"/>
+    <path fill="#fff"
+    stroke="" stroke-width="2"
+      stroke-linecap="round"  stroke-linejoin="round"
+      d="M123.582,120.708c8.958-17.102,17.695-33.79,26.439-50.476c6.04-11.529,19.564-14.4,29.217-6.203
+      c6.387,5.42,8.155,14.792,4.064,22.71c-7.577,14.656-15.274,29.247-22.926,43.87c-6.691,12.77-13.403,25.539-20.095,38.322
+      c-3.539,6.744-9.082,10.449-16.728,10.473c-7.659,0.035-13.262-3.657-16.792-10.385c-14.367-27.375-28.695-54.771-43.018-82.172
+      c-4.844-9.265-1.494-20.467,7.492-25.24c9.326-4.952,20.516-1.437,25.479,8.034c8.497,16.208,16.969,32.425,25.456,48.64
+      C122.536,118.974,122.962,119.643,123.582,120.708z"/>
+    <path fill="#fff"
+    stroke="" stroke-width="2"
+      stroke-linecap="round"  stroke-linejoin="round"
+      d="M238.846,209.004c-4.339,0-8.681,0.04-13.02-0.023c-3.615-0.055-5.951-1.869-6.311-4.705
+      c-0.492-3.857,1.871-6.461,6.08-6.516c5.786-0.066,11.569-0.014,17.356-0.014c0.546,0,1.088,0.014,1.627-0.01
+      c0.704-0.024,1.492,0.131,1.566-0.967c0.094-1.364-0.884-1.108-1.645-1.108c-6.057-0.015-12.11,0.021-18.17-0.022
+      c-4.041-0.035-6.737-2.648-6.852-6.496c-0.121-4.166,2.587-7.035,6.801-7.047c8.499-0.044,16.995-0.044,25.491,0
+      c4.613,0.023,7.842,3.266,7.867,7.815c0.023,3.892,0.008,7.771,0,11.657c0,4.838-2.301,7.289-7.234,7.397
+      C247.887,209.079,243.361,209.004,238.846,209.004z"/>
+    <path fill="#fff"
+    stroke="" stroke-width="2"
+      stroke-linecap="round"  stroke-linejoin="round"
+      d="M238.876,224.509c-2.349,0-4.701,0.034-7.051-0.014c-3.433-0.077-6.031-2.69-6.274-6.218
+      c-0.234-3.405,2.112-6.838,5.405-7.01c5.317-0.297,10.668-0.291,15.983-0.059c3.189,0.135,5.688,3.662,5.49,6.989
+      c-0.195,3.438-2.896,6.209-6.231,6.296C243.76,224.553,241.32,224.509,238.876,224.509z"/>
+    <path fill="#fff"
+    stroke="" stroke-width="2"
+      stroke-linecap="round"  stroke-linejoin="round"
+      d="M32.819,121.551c7.825,6.48,11.274,14.615,10.992,24.641c-0.308,10.935-0.152,21.883-0.143,32.83
+      c0.005,9.899,6.872,17.078,16.782,17.638c3.564,0.198,5.993,2.55,5.917,5.735c-0.078,3.342-2.596,5.487-6.419,5.465
+      c-15.283-0.103-27.91-13.586-27.499-29.006c0.309-11.475,0.297-22.957,0.236-34.44c-0.05-9.44-6.516-16.29-15.995-17.312
+      c-0.717-0.076-1.442-0.106-2.151-0.238c-2.853-0.532-4.711-2.943-4.525-5.844c0.172-2.754,2.225-4.875,4.997-5.167
+      c12.103-1.275,17.745-7.539,17.698-19.798c-0.051-12.388-0.078-24.775-0.307-37.16c-0.283-15.21,12.728-28.703,27.725-28.543
+      c4.554,0.047,7.33,3.567,5.846,7.477c-0.844,2.225-2.459,3.446-4.888,3.649c-11.35,0.947-17.438,7.576-17.423,18.967
+      c0.015,12.027-0.128,24.061,0.145,36.083C44.031,106.602,40.543,114.848,32.819,121.551z"/>
+    <path fill="#fff"
+    stroke="" stroke-width="2"
+      stroke-linecap="round"  stroke-linejoin="round"
+      d="M438.449,121.559c-8.003-6.971-11.331-15.534-11.035-25.894c0.34-12.113,0.172-24.243,0.151-36.366
+      c-0.018-10.154-6.703-17.147-16.909-17.818c-3.618-0.236-5.846-2.528-5.693-5.858c0.151-3.183,2.459-5.208,6.018-5.278
+      c14.542-0.29,27.76,12.617,27.793,27.309c0.029,13.297-0.151,26.594-0.139,39.888c0.003,5.982,2.096,11.135,6.854,14.979
+      c2.855,2.306,6.245,3.125,9.84,3.316c3.726,0.195,5.804,2.092,5.901,5.341c0.104,3.373-1.921,5.426-5.736,5.809
+      c-10.847,1.089-16.903,7.752-16.873,18.688c0.023,11.21,0.148,22.431,0.165,33.642c0.03,15.307-11.389,27.541-26.588,28.541
+      c-4.588,0.297-7.501-2.107-7.215-5.969c0.212-2.979,2.356-5.013,5.53-5.23c10.635-0.77,17.064-7.583,17.052-18.178
+      c-0.018-11.221-0.099-22.431-0.168-33.653C427.33,135.369,431.039,127.678,438.449,121.559z"/>
+    <path fill="#FFFFFF" d="M195.804,147.809c-9.795-12.197-13.755-26.105-10.656-41.391c4.352-21.456,17.523-35.435,38.734-40.781
+      c16.327-4.109,31.351-0.271,44.481,10.456c-22.889-10.328-44.422-8.191-62.341,9.553
+      C188.138,103.351,185.904,124.855,195.804,147.809z"/>
+    <path fill="#FFFFFF" d="M240.748,98.489c-2.348,4.992-5.793,9.312-8.579,14.04c-1.647,2.798-3.465,5.493-5.26,8.196
+      c-0.49,0.736-0.768,2.145-2.132,1.409c-1.024-0.552-1.476-1.664-1.218-2.792c0.217-0.943,0.6-1.956,1.208-2.688
+      c5.016-6.028,10.102-12.002,15.187-17.973c0.142-0.17,0.485-0.164,0.741-0.238L240.748,98.489z"/>
+</svg>
+
+    </a>
+
+    <a class="lines-button arrow arrow-up navigation-menu-button" id="js-mobile-menu" type="button" role="button"
+      aria-label="Toggle Navigation">
+      <span class="lines"></span>
+    </a>
+
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu">
+        <li class="nav-link" data-menuanchor="about"><a href="/index.html#about">About</a></li>
+        <li class="nav-link" data-menuanchor="projects"><a href="/index.html#projects">Projects</a>
+        </li>
+        <!-- <li class="nav-link" data-menuanchor="team"><a href="/index.html#team">Team</a></li> -->
+
+      </ul>
+    </nav>
+</header>
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post container">
+
+  <header class="post-header">
+    <h1 class="post-title">Terracotta Plants</h1>
+  </header>
+
+  <article class="post-content">
+    <br>
+<section class="responsive-container-single">
+    	<article>
+    		<img class="bullet-img" src="/assets/images/gridicons/meteor.png" alt="">
+            <div class="bullet-content" id="page-Terracotta Plants">
+                <h2>Terracotta Plants</h2>
+                <h3>Smart tunnel house automation</h3>
+                <p>Terracotta Plants rely on tunnel houses and greenhouses to grow both plants and vegetables for the
+                    <a href="http://www.otagofarmersmarket.org.nz/">Otago Farmers Market</a>. As the weather in Dunedin, New Zealand 
+                    can be extremely unpredictable most of the time the problem was how to monitor, yet control the 'artificial climate'.</p>
+                 <p>Certain problems persist:</p>
+                 <ul>
+                    <li>With high temperatures inside, airflow needs to increase</li>
+                    <li>Instead of watering twice a day (manually), the plants need to be watered more</li>
+                    <li>High temperatures and sunlight pose a problem too, as the plants are completely sheltered from cold wind
+                        and therefore ambient lighting is a factor that must be taken into consideration</li>
+                    <li>No proper record keeping</li>
+                 </ul>
+                 <p>Most greenhouses and such have similar problems, however commercial systems can range over $100,000 NZD to detect 
+                    the problems that Terracotta Plants were having. As a small farmers market business, commercial systems were simply out
+                    of their price range.</p>
+                 <p></p>
+                 <br><br>
+                 <p><a href="https://tessel.io/"><img width="300" src="https://s3.amazonaws.com/technicalmachine-assets/technical-io/tessel-logo-horizontal.svg" /></a></p>
+                 <p>Using a <a href="https://tessel.io/">Tessel board</a> we were able to create a cheap yet efficient solution to their problems.</p>
+                 <ul>
+                    <li>Using the Ambient and Temperature module, we recorded the output of each greenhouse and tunnel house to a (responsive)
+                        website based on <a href="#">MeteorJS</a>.</li>
+                    <li>After the intial testing and gathering of baseline data we added a Servo module to control both the watering and fans</li>
+                    <li>Finally, we ended the prototype by allowing Terracotta Plants to add in automatic alerts:</li>
+                    <ul>
+                        <li>They could set filters which would turn the watering system on at certain ambient lighting and inside temperature.</li>
+                        <li>As the website was created with mobile-responsiveness in mind, they were able to keep track of watering remotely</li>
+                        <li>Because everything was logged automatically to a database, they were able to tell which temperature range
+                            and pH that their plants needed to flourish.</li>
+                     </ul>
+                  </ul>
+
+                  <br><br>
+                  <p><img width="300" src="/assets/images/keenio.svg" /></p>
+                  <p>We did find some limitations using MeteorJS, and so we looked at <a href="https://keen.io/">KeenIO</a> and it simply blew us away with what we were able to do, especially in terms of analytics for us, and the client.</p>
+                  <p><img src="/assets/images/keenio_tessel.png" /></p>
+                  <p>This system was a prototype, and surpassed the expectations of the client. For example, they managed to be able to sell new potatoes
+                     more than two months before anyone else in Otago could grow them. Even before big commercial greenhouse businesses.</p>  
+
+                <blockquote class="receiver">
+                   <p>It's really astonishing how such a small piece of technology can give us the ability to focus on what we love rather than maintenance</p>
+                </p>
+                    <h6>- Terracotta Plants, Dunedin, New Zealand</h6>
+                </blockquote>
+                
+            </div>
+    	</article>
+</section>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+  <div class="footer-links">
+    <ul class="footer-left" id="footer-left">
+      <li><h3>Proudly based in</h3></li>
+      <li><a href="http://www.dunedin.govt.nz/"><img class="dunedinlogo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MzUiIGhlaWdodD0iMjYwIiB2aWV3Qm94PSIwIDAgNjM1IDI2MCI+PHBhdGggZD0iTTEwIDE1MS4zOTVjLjIwNC0xLjI0LjEtMS45NjQuNDA4LTIuMjggNS45MDUtNi4wMzggNS42Ni0xMy43OCA1LjcyLTIxLjMxLjEzNy0xNi45OTIuMDk1LTMzLjk4Ni0uMDctNTAuOTc4LS4wMy0zLjIyMi45OTMtNC41MyA0LjExLTUuNTQ2IDUuOS0xLjkyNCAxMS41NjQtNC41ODUgMTcuMzI3LTYuOTRsLjQtMS45MzVjLS44NTctLjQyOC0xOC4yMy0xMy4xMjUtMjYuMDA1LTE5LjExNS0uODA4LS42MjMtMS43NC0xLjczLTEuNzU3LTIuNjMtLjE0LTcuNjQzLS4wOC0xNS4yOS0uMDgtMjMuODRDMTYuNTMgMjEuNTA3IDYzLjY5IDU2LjE0NSA4MS41ODUgNjkuMjFjMi40NSAxLjc4OCAzLjQ4IDMuNTczIDMuNDQ4IDYuODQzLS4yMjIgMjMuNDUtLjE2NyA0Ni45MDMtLjA0NiA3MC4zNTQuMDE0IDIuNjQ1LS43NjUgMy44NDgtMy4xNTUgNS4wNi05LjIzIDQuNjg4LTE4LjI1IDkuNzgzLTI3LjQzMiAxNC41NjUtMS4yNC42NDYtMy40MjUgMS4wNy00LjM4Ni40MjctMTIuMDYtOC4wODUtMjQuOTY1LTEzLjg2LTQwLjAxNC0xNS4wNjd6bTI5LjA3Mi0xNS43NTJjLjAwOCAxLjM4IDEuMDA2IDMuNDQ0IDIuMTM3IDQuMDE2IDYuODQ2IDMuNDU2IDE0LjI2NCA2LjkxIDIyLjA0IDEwLjUybC4wMjUtNjQuMzg1Yy4wMi0zLjMyMi0xLjA1My01LjQxOC0zLjg5Mi03LjE4NC0zLjkyLTIuNDM2LTE0LjYwMy05Ljc1Mi0xNS42MzItOS4yNjMtMi4yMjYgMS4wNi00LjgyIDIuMDQtNC43OTggNS42MTJsLjEyIDYwLjY4M3pNMzgyLjc5MiAxNTEuMzk1Yy4yMDQtMS4yNC4xLTEuOTY0LjQwOC0yLjI4IDUuOTA1LTYuMDM4IDUuNjYtMTMuNzggNS43MjItMjEuMzEuMTM2LTE2Ljk5Mi4wOTQtMzMuOTg2LS4wNy01MC45NzgtLjAzLTMuMjIyLjk5Mi00LjUzIDQuMTA4LTUuNTQ2IDUuOTAyLTEuOTI0IDExLjU2NS00LjU4NSAxNy4zMjctNi45NC4xMzQtLjY0NS4yNjgtMS4yOS40LTEuOTM1LS44NTctLjQyOC0xOC4yMy0xMy4xMjUtMjYuMDA2LTE5LjExNS0uODA2LS42MjMtMS43NC0xLjczLTEuNzU2LTIuNjMtLjE0LTcuNjQzLS4wOC0xNS4yOS0uMDgtMjMuODQgNi40NzYgNC42ODggNTMuNjM4IDM5LjMyNiA3MS41MzIgNTIuMzkyIDIuNDQ4IDEuNzg4IDMuNDggMy41NzMgMy40NDcgNi44NDMtLjIyIDIzLjQ1LS4xNjYgNDYuOTAzLS4wNDYgNzAuMzU0LjAxNCAyLjY0NS0uNzY1IDMuODQ4LTMuMTU1IDUuMDYtOS4yMyA0LjY4OC0xOC4yNSA5Ljc4My0yNy40MzIgMTQuNTY1LTEuMjQuNjQ2LTMuNDI0IDEuMDctNC4zODYuNDI3LTEyLjA1OC04LjA4NS0yNC45NjItMTMuODYtNDAuMDEyLTE1LjA2N3ptMjkuMDctMTUuNzUyYy4wMSAxLjM4IDEuMDA4IDMuNDQ0IDIuMTQgNC4wMTYgNi44NDYgMy40NTYgMTQuMjY0IDYuOTEgMjIuMDQgMTAuNTJsLjAyNS02NC4zODVjLjAyLTMuMzIyLTEuMDUzLTUuNDE4LTMuODkyLTcuMTg0LTMuOTItMi40MzYtMTQuNjAzLTkuNzUyLTE1LjYzMi05LjI2My0yLjIyOCAxLjA2LTQuODIgMi4wNC00LjggNS42MTJsLjEyIDYwLjY4M3pNMTQxLjE3IDE0Ny44MzRjLTMuMTgzIDAtNy41NjUtNi41MDQtNy41NjctOS45LS4wMS0xNi44Ni4xOTgtMzMuNzI3LS4xMy01MC41ODItLjExOC02LjEuMzQyLTExLjM5NSA2LjIxLTE0LjczLjQyNC0uMjQyLjY1LS44MyAxLjE2NC0xLjUxMmwtMTcuOTUyLTE1Ljk0LTE5LjU5OCAxNy4yYzIuNTA2IDEuNzQyIDQuNjA0IDIuODkgNi4yODUgNC40OCAxLjA4IDEuMDIyIDIuMTkgMi42ODggMi4xOTYgNC4wNy4wNzYgMTkuMzktLjA1NCAzOC43NzgtLjA4OCA1OC4xNjctLjAwNiAzLjcyNy0uNjc2IDYuOTA2LTQuNTAzIDguNzI1LTIuMTI3IDEuMDEtMS45MzMgMi42MTUtLjA0MyAzLjg2IDcuODI2IDUuMTQ4IDE1LjY4IDEwLjI1NSAyMy44ODYgMTUuNjE0bDI3Ljg0Ni0yNS4xMmMuNjAzLjc5My44NzIuOTkuOSAxLjIxNi4wOS42OTMuMTIyIDEuMzk4LjExMyAyLjEtLjExIDkuMDUgMy41OTggMTYuMDQ0IDExLjQyNCAyMC42MjggMS4xLjY0NCAzLjI3OC44MTUgNC4yMTIuMTU0IDYuNDEtNC41NDIgMTIuNjIzLTkuMzU2IDE4Ljg4LTE0LjExLjMtLjIyOC40MTMtLjcwMi43MTgtMS4yNS0uNzctLjkwMy0xLjU1LTEuODItMi4yNy0yLjY2OC03LjI2OCAyLjgwNS05LjM5NSAxLjY0NC0xMC45MDUtNS44NDItLjMwMy0xLjQ5OC0uMzc2LTMuMDYyLS4zOC00LjU5Ni0uMDMtMTYuMy4xNi0zMi42MDItLjEyNS00OC44OTYtLjExNy02LjY2LS4wNS0xMi44NjUgNi4yNC0xNy4wMDguMTY0LS4xMDguMTI4LS41MTcuMjctMS4xOGwtMTcuNjk4LTE1LjU2N0wxNTIuMiA3MS4zNTJjMi4wNzcgMS44MiAzLjk2NiAzLjA4NiA1LjMyIDQuNzggMS4xMiAxLjQwMyAyLjI2IDMuMzA0IDIuMjc3IDQuOTk2LjE3NSAxNi4xNTYuMTkzIDMyLjMxNy4wMSA0OC40NzMgMCA0LjcyMy0xNS4xNCAxOC4yMzQtMTguNjM3IDE4LjIzNHpNMjIwLjUyMiA1NS4yN2M4LjIwNSA1LjI2MiAxNC4wMDcgMTEuNTIgMTMuMDYgMjIuOThsMjcuODItMjIuODJjMTEuNTA2IDcuNzYzIDE5LjcyNyAxNi45MSAxOS4wMjQgMzIuMjUtLjc2NCAxNi42ODgtLjE1OCA1MC43MjgtLjE1NCA1MS4wMS4xMjMgMTAuMyAzLjU2MiAxMi4zMTIgMTIuNDM3IDcuMTA0IDEuOTAyIDEuODI2IDMuMTE4IDMuMjA3LjAxNyA1LjUwMi02LjMwNSA0LjY2Ni0xMi4zNCA5LjcwNS0xOC4zNjYgMTQuNzM2LTEuNzYzIDEuNDctMi45OTYgMS40MDYtNC43MjUuMDI3LTYuNDMtNS4xMy0xMC44My0xMS4yMjQtMTAuODMyLTE5Ljg5NyAwLTE2LjM0Mi0uMjgzLTU1LjUwOC0uMjgzLTU5Ljg1Ny42MzItNi40MjctMi45Ni0xMC40NjQtNy42My0xNC42NC01LjI2OCA0LjQyLTEwLjU3MyA4LjcyLTE1LjY1NCAxMy4yNy0uOTYuODYtMS40MyAyLjcxNy0xLjQzOCA0LjExNi0uMDkyIDE3LjcwOC0uMDk0IDM1LjQxNy4wMTMgNTMuMTI2LjAxIDEuMzc1Ljc2OCAyLjkxNSAxLjU5OCA0LjA3NyAxLjUzMyAyLjE0NiAzLjM3NyA0LjA3IDUuNTI2IDYuNTk3LTUuOTggNC43ODMtMTEuODIzIDkuNTE2LTE3Ljc3MyAxNC4xMS0uNDkuMzc4LTEuOTU3LjEyNC0yLjU1LS4zNTUtNS43Ni00LjY0Ni0xMS40My05LjQtMTcuMDI0LTE0LjA0Mi4zMTgtLjcuMzYtMS4wNTcuNTUtMS4xNzIgNy4zMzgtNC40NyA4LjE1My0xMS4yNDYgNy44OTYtMTkuMTYyLS41MTYtMTUuODY0LS4xMzUtMzEuNzU4LS4xNzItNDcuNjQtLjAwNS0yLjM4Mi0uMDUtNC44LS40NTUtNy4xMzctLjgyNS00Ljc1NS0zLjA4My02LTcuNDItMy45MzctMi40MzUgMS4xNTgtMy45MjcgMS4wMzQtNC44ODctMi4wMTIgNy4wMTUtNS4zMTMgMTQuMTI3LTEwLjcwMyAyMS40MjQtMTYuMjM0ek01NDUuNTIgNTUuMjdjOC4yMDYgNS4yNjIgMTQuMDEgMTEuNTIgMTMuMDYyIDIyLjk4bDI3LjgyLTIyLjgyYzExLjUwNiA3Ljc2MyAxOS43MjcgMTYuOTEgMTkuMDI0IDMyLjI1LS43NjUgMTYuNjg4LS4xNTggNTAuNzI4LS4xNTMgNTEuMDEuMTIyIDEwLjMgMy41NiAxMi4zMTIgMTIuNDM2IDcuMTA0IDEuOTAyIDEuODI2IDMuMTE4IDMuMjA3LjAxOCA1LjUwMi02LjMwNSA0LjY2Ni0xMi4zNCA5LjcwNS0xOC4zNjYgMTQuNzM2LTEuNzY0IDEuNDctMi45OTYgMS40MDYtNC43MjUuMDI3LTYuNDMyLTUuMTMtMTAuODMyLTExLjIyNC0xMC44MzItMTkuODk3IDAtMTYuMzQyLS4yODMtNTUuNTA4LS4yODMtNTkuODU3LjYzMi02LjQyNy0yLjk2LTEwLjQ2NC03LjYzLTE0LjY0LTUuMjY4IDQuNDItMTAuNTczIDguNzItMTUuNjUzIDEzLjI3LS45Ni44Ni0xLjQzMiAyLjcxNy0xLjQ0IDQuMTE2LS4wOTIgMTcuNzA4LS4wOTMgMzUuNDE3LjAxNCA1My4xMjYuMDEgMS4zNzUuNzY3IDIuOTE1IDEuNTk3IDQuMDc3IDEuNTM0IDIuMTQ2IDMuMzggNC4wNyA1LjUyOCA2LjU5Ny01Ljk4IDQuNzgzLTExLjgyNCA5LjUxNi0xNy43NzMgMTQuMTEtLjQ5Mi4zNzgtMS45NTcuMTI0LTIuNTUyLS4zNTUtNS43Ni00LjY0Ni0xMS40My05LjQtMTcuMDIzLTE0LjA0Mi4zMTctLjcuMzYtMS4wNTcuNTUtMS4xNzIgNy4zMzgtNC40NyA4LjE1My0xMS4yNDYgNy44OTYtMTkuMTYyLS41MTYtMTUuODY0LS4xMzYtMzEuNzU4LS4xNzMtNDcuNjQtLjAwNS0yLjM4Mi0uMDUtNC44LS40NTQtNy4xMzctLjgyNy00Ljc1NS0zLjA4NC02LTcuNDIzLTMuOTM3LTIuNDM0IDEuMTU4LTMuOTI2IDEuMDM0LTQuODg2LTIuMDEyIDcuMDEzLTUuMzEzIDE0LjEyNS0xMC43MDMgMjEuNDItMTYuMjM0ek0zMDQuMTg3IDE1My42MDVjLS4wNzItLjY0LS4xNS0uODU0LS4wOTQtLjg5NiA3LjgxNy02LjEwOCA3LjQtMTQuODU2IDcuNDE4LTIzLjQuMDI1LTEzLjIwNi0uMDU0LTI2LjQxLS4xNjQtMzkuNjE0LS4wNDMtNS4xMTMuMTU3LTEwLjUxMi03LjE5LTEwLjg5Ni0uMjQ4LS4wMTMtLjQ2Ny0uNjMtMS4wMy0xLjQ0IDEuMTQzLS42MDMgMjguMjIyLTE0LjI4NiA0MC42Ni0yMC43NDIgMi4xNy0xLjEyNSAzLjQwMi0uOTg2IDQuODguOTQgOC4xOCAxMC42NyAxNi40NTMgMjEuMjcgMjUuMDEyIDMyLjMwMi0xLjI5NyAxLjE4Mi0yNi45IDIyLjU2My0zOC4yNjYgMzIuMTcyLTEuMDguOTEyLTEuOTI0IDIuNjkzLTEuOTg4IDQuMTEtLjI0NCA1LjMyNy0uMjU0IDEwLjY3OC0uMDMgMTYuMDA2LjA1IDEuMTgzIDEuMTQgMi43OTggMi4yMDQgMy4zOCA0LjkxNyAyLjY5IDkuOTQzIDUuMjAzIDE1LjA1OCA3LjQ5NiAxLjEyNy41MDQgMy4wMzcuMzA1IDQuMTMtLjM0NCA0LjA5NS0yLjQzIDcuOTU0LTUuMjU0IDEyLjAyLTcuNzQuNzctLjQ3MyAyLjA3Mi0uMDg2IDMuMTMtLjA5Ni0uMzggMS4wMDMtLjQ1NyAyLjQ1NC0xLjE4IDIuOTQtOS4zMjMgNi4yNTItMTguNzIgMTIuMzk2LTI4LjE1OCAxOC40Ny0uOTI4LjU5OC0yLjU5MyAxLjE1Mi0zLjM2LjcyNy0xMC41NDUtNS44My0yMS4zNTYtMTAuOTYtMzMuMDUtMTMuMzc1em0yOS4yODUtMzkuMDhsMjIuMTk4LTE4LjM4Ny0yMi4xOTgtMjcuNDkydjQ1Ljg4ek01MTUuNjAzIDE1NC43NjRMNDk5IDE2Ny42MTRjLTcuNDAyLTYuMjMtMjEuNzQzLTE3Ljk1My0yMS42LTE4LjAyNCA1Ljc2Ni0yLjg1NiA2LjkzLTkuMDAyIDYuOTM2LTE0Ljc2My4wMi0xOC42OTMuMTEtMzcuMzg2LS4wMDItNTYuMDgtLjAxLTEuNDA2LTEuMTU2LTMuMDEzLTIuMTg1LTQuMTU4LTEuNDg2LTEuNjU1LTMuMzQ3LTIuOTcyLTUuNDg2LTQuODFsMTguMTUtMTQuNjQzIDE4LjIxOCAxNC44NjVjLS4yNjIuNzA1LS4yOCAxLjA4Ni0uNDYgMS4xOS02LjIwNSAzLjYwNS02Ljc3MiA5LjI0LTYuNjQgMTUuNzgzLjM2NCAxNy44NC4yNyAzNS42OTYuMDM3IDUzLjU0Mi0uMDU4IDQuMzMyLjc5IDcuNTg3IDQuNjIyIDkuOTE4IDEuNjQ3IDEuMDAzIDIuOTcgMi41MzYgNS4wMSA0LjMzek01MjEuMzc2IDEwLjY5Yy02LjA0IDguMzY2LTExLjQ3NyAxNi4xNDYtMTcuMjczIDIzLjY0OC0uODUzIDEuMTA0LTMuNDE0Ljg4OC02LjE2MyAxLjUgMS44MzgtOC44MjIgMy4zNzYtMTYuNjEyIDUuMjA2LTI0LjMzMy4xNzgtLjc0OCAyLjE2OC0xLjUxOCAzLjMxLTEuNTA2IDQuNjE3LjA0OCA5LjIzMy4zOTcgMTQuOTIuNjl6TTI0NC44NzIgMTkwLjE5NWg3LjQwNHY0My44NmgtOC4wMzJsLTI0Ljg1LTMydjMyaC03LjQwM3YtNDMuODZoNy40MDVsMjUuNDc2IDMyLjc1NXYtMzIuNzU1ek0yOTMuODc4IDIyMC40NGgtMjYuMTY2Yy4xNjcgMi40MjcgMS4yNzUgNC4zODMgMy4zMjYgNS44NjcgMi4wNSAxLjQ4NSA0LjM5MiAyLjIyOCA3LjAyOCAyLjIyOCA0LjE4MyAwIDcuMzYyLTEuMzE4IDkuNTM4LTMuOTUzbDQuMDE2IDQuMzkyYy0zLjYgMy43MjQtOC4yODMgNS41ODUtMTQuMDU2IDUuNTg1LTQuNjg2IDAtOC42Ny0xLjU2LTExLjk1NC00LjY3Ni0zLjI4NS0zLjExNi00LjkyNi03LjMtNC45MjYtMTIuNTUgMC01LjI1IDEuNjcyLTkuNDIyIDUuMDItMTIuNTE4IDMuMzQ2LTMuMDk2IDcuMjktNC42NDQgMTEuODI4LTQuNjQ0IDQuNTQgMCA4LjM5NyAxLjM3IDExLjU3NyA0LjExIDMuMTc4IDIuNzQgNC43NjggNi41MTYgNC43NjggMTEuMzI1djQuODMzem0tMjYuMTY2LTUuNTIyaDE5LjEzOGMwLTIuODAyLS44NzgtNC45NTctMi42MzUtNi40NjMtMS43NTctMS41MDYtMy45MjItMi4yNi02LjQ5NS0yLjI2cy00Ljg4NS43ODUtNi45MzQgMi4zNTVjLTIuMDUgMS41NjgtMy4wNzQgMy42OTItMy4wNzQgNi4zNjh6TTMxNi41OTIgMjM0LjA1N2gtOC4wMzJsLTExLjU0Ni0zMy4zODJoNy4yOGw4LjI4MiAyNS4yMjUgOC4yODMtMjUuMjI1aDcuMjc4bDguMjgzIDI1LjIyNSA4LjI4NC0yNS4yMjVoNy4yOGwtMTEuNTQ3IDMzLjM4MmgtOC4wMzJsLTcuOTA2LTIyLjg0LTcuOTA4IDIyLjg0ek0zOTcuNTM2IDE5Ni45NzNoLTI0LjcyM3YtNi43NzdoMzUuMDEzdjUuNzczbC0yNS40NzUgMzEuMDZ2LjE4OGgyNS44NTN2Ni44NGgtMzYuMjA1di01LjcxbDI1LjUzOC0zMS4xODZ2LS4xOXpNNDQ2LjkxOCAyMjAuNDRoLTI2LjE2NmMuMTY2IDIuNDI3IDEuMjc1IDQuMzgzIDMuMzI2IDUuODY3IDIuMDUgMS40ODUgNC4zOTIgMi4yMjggNy4wMjcgMi4yMjggNC4xODMgMCA3LjM2LTEuMzE4IDkuNTM3LTMuOTUzbDQuMDE3IDQuMzkyYy0zLjYgMy43MjQtOC4yODQgNS41ODUtMTQuMDU3IDUuNTg1LTQuNjg2IDAtOC42Ny0xLjU2LTExLjk1My00LjY3Ni0zLjI4NS0zLjExNi00LjkyNi03LjMtNC45MjYtMTIuNTUgMC01LjI1IDEuNjcyLTkuNDIyIDUuMDItMTIuNTE4IDMuMzQ2LTMuMDk2IDcuMjktNC42NDQgMTEuODI4LTQuNjQ0IDQuNTM4IDAgOC4zOTYgMS4zNyAxMS41NzYgNC4xMSAzLjE4IDIuNzQgNC43NyA2LjUxNiA0Ljc3IDExLjMyNXY0LjgzM3ptLTI2LjE2Ni01LjUyMmgxOS4xNGMwLTIuODAyLS44OC00Ljk1Ny0yLjYzNy02LjQ2M3MtMy45MjItMi4yNi02LjQ5NS0yLjI2Yy0yLjU3MiAwLTQuODg1Ljc4NS02LjkzNCAyLjM1NS0yLjA1IDEuNTY4LTMuMDc0IDMuNjkyLTMuMDc0IDYuMzY4ek00ODEuMDUzIDIzNC4wNTdoLTYuNHYtNC40NTVjLTIuNzYgMy4zMDUtNi40NjMgNC45NTctMTEuMTA2IDQuOTU3LTMuNDczIDAtNi4zNS0uOTgzLTguNjI4LTIuOTUtMi4yOC0xLjk2Ni0zLjQyLTQuNTktMy40Mi03Ljg3NSAwLTMuMjgzIDEuMjEyLTUuNzQgMy42NC03LjM3MyAyLjQyNS0xLjYzIDUuNzEtMi40NDcgOS44NS0yLjQ0N2g5LjF2LTEuMjU1YzAtNC40MzQtMi40Ny02LjY1LTcuNDA0LTYuNjUtMy4wOTYgMC02LjMxNiAxLjEzLTkuNjYzIDMuMzg4bC0zLjEzOC00LjM5M2M0LjA1Ny0zLjIyIDguNjYtNC44MyAxMy44MDUtNC44MyAzLjkzMiAwIDcuMTQzLjk5MyA5LjYzMiAyLjk4IDIuNDg4IDEuOTg2IDMuNzMzIDUuMTEzIDMuNzMzIDkuMzh2MjEuNTIyem0tNy4wMjgtMTIuNDI0di0yLjgyNGgtNy45MDZjLTUuMDYzIDAtNy41OTQgMS41OS03LjU5NCA0Ljc3IDAgMS42My42MjggMi44NzUgMS44ODIgMy43MzIgMS4yNTYuODU3IDMuMDAyIDEuMjg2IDUuMjQgMS4yODYgMi4yMzcgMCA0LjE5My0uNjI4IDUuODY3LTEuODgzIDEuNjczLTEuMjU1IDIuNTEtMi45NSAyLjUxLTUuMDgyek00OTcuMjQgMjM0LjA1N2gtNy4wMjd2LTQ2LjU2aDcuMDI4djQ2LjU2ek01MzMuODIyIDIzNC4wNTdoLTYuNHYtNC40NTVjLTIuNzYgMy4zMDUtNi40NjMgNC45NTctMTEuMTA1IDQuOTU3LTMuNDczIDAtNi4zNS0uOTgzLTguNjI4LTIuOTUtMi4yOC0xLjk2Ni0zLjQyLTQuNTktMy40Mi03Ljg3NSAwLTMuMjgzIDEuMjEyLTUuNzQgMy42NC03LjM3MyAyLjQyNS0xLjYzIDUuNzEtMi40NDcgOS44NS0yLjQ0N2g5LjF2LTEuMjU1YzAtNC40MzQtMi40Ny02LjY1LTcuNDA1LTYuNjUtMy4wOTYgMC02LjMxNiAxLjEzLTkuNjYyIDMuMzg4bC0zLjE0LTQuMzkzYzQuMDYtMy4yMiA4LjY2LTQuODMgMTMuODA2LTQuODMgMy45MyAwIDcuMTQyLjk5MyA5LjYzMiAyLjk4IDIuNDg4IDEuOTg2IDMuNzMyIDUuMTEzIDMuNzMyIDkuMzh2MjEuNTIyem0tNy4wMjctMTIuNDI0di0yLjgyNGgtNy45MDZjLTUuMDYzIDAtNy41OTMgMS41OS03LjU5MyA0Ljc3IDAgMS42My42MjcgMi44NzUgMS44ODIgMy43MzJzMyAxLjI4NiA1LjIzOCAxLjI4NiA0LjE5My0uNjI4IDUuODY3LTEuODgzYzEuNjcyLTEuMjU1IDIuNTEtMi45NSAyLjUxLTUuMDgyek01NTAuMDEgMjE1Ljk4NXYxOC4wN2gtNy4wMjZ2LTMzLjM4aDcuMDI3djYuMDg1YzEuMTMtMi4wNSAyLjY5LTMuNjYgNC42NzYtNC44MyAxLjk4Ni0xLjE3MiA0LjEzLTEuNzU4IDYuNDMyLTEuNzU4IDMuNzY1IDAgNi44MSAxLjE1IDkuMTMgMy40NXMzLjQ4MiA1LjYyNyAzLjQ4MiA5Ljk3OHYyMC40NTZoLTcuMDI3di0xOC4zMjJjMC02LjE1LTIuNTUzLTkuMjI1LTcuNjU1LTkuMjI1LTIuNDI3IDAtNC41NC44MDYtNi4zMzggMi40MTUtMS44IDEuNjEyLTIuNyAzLjk2NS0yLjcgNy4wNnpNNTg1LjQ2NCAyMjkuNzljLTMuMTM4LTMuMTgtNC43MDYtNy4zNjItNC43MDYtMTIuNTUgMC01LjE4NyAxLjYxLTkuMzI4IDQuODMyLTEyLjQyNCAzLjIyLTMuMDk2IDcuMDYtNC42NDQgMTEuNTE0LTQuNjQ0czguMDQyIDEuODgyIDEwLjc2MiA1LjY0N3YtMTguMzI0aDcuMDI3djQ2LjU2aC03LjAyN3YtNS4wMmMtMi41OTUgMy42ODItNi4zOCA1LjUyLTExLjM1NyA1LjUyLTQuMjI4LjAwMy03LjkwOC0xLjU4Ni0xMS4wNDYtNC43NjZ6bTIuMzItMTIuMjY4YzAgMy4yIDEuMDI2IDUuODA1IDMuMDc2IDcuODEyIDIuMDUgMi4wMDggNC40NTUgMy4wMTIgNy4yMTYgMy4wMTJzNS4xMDQtMS4wMTQgNy4wMjgtMy4wNDNjMS45MjMtMi4wMyAyLjg4Ni00LjYzMyAyLjg4Ni03LjgxMiAwLTMuMTc4LS45NjMtNS44MzUtMi44ODYtNy45NjgtMS45MjUtMi4xMzQtNC4yOS0zLjItNy4wOS0zLjItMi44MDQgMC01LjIxIDEuMDY2LTcuMjE3IDMuMi0yLjAwOCAyLjEzMy0zLjAxMiA0LjgtMy4wMTIgOHoiLz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMTYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTEwIDIxMmgxODkiLz48L3N2Zz4="></a></span></li>
+
+    </ul>
+
+  </div>
+
+  <hr>
+
+  <p>Welcome to the bottom of the page! <br /> <i class="fa fa-copyright"></i> veb ltd</p>
+</footer>
+
+<footer class="sticky-footer">
+  <ul>
+    <li class="invert">
+    <i class="fa fa-star-half-o"></i>
+    </li>
+    <li class="embiggen">
+    <i class="fa fa-font"></i>
+    </li>
+  </ul> 
+</footer>
+
+<!--<script>-->
+  <!--(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){-->
+  <!--(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),-->
+  <!--m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)-->
+  <!--})(window,document,'script','//www.google-analytics.com/analytics.js','ga');-->
+
+  <!--ga('create', 'UA-55085420-1', 'auto');-->
+  <!--ga('send', 'pageview');-->
+
+<!--</script>-->
+
+
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        menu: '#js-navigation-menu',
+        sectionsColor: ['#fff', '#fff', '#fff'],
+        anchors: ['about', 'projects', 'team'],
+        css3: true,
+        autoScrolling: false,
+        fitToSection: false,
+        fitToSectionDelay: 86400
+      });
+      var menuToggle = $('#js-mobile-menu').unbind();
+      $('#js-navigation-menu').removeClass("show");
+      menuToggle.text("MENU");
+
+      menuToggle.on('click', function (e) {
+        e.preventDefault();
+        $('#js-navigation-menu').slideToggle(function () {
+          if ($('#js-navigation-menu').is(':hidden')) {
+            menuToggle.text("MENU");
+            $('#js-navigation-menu').removeAttr('style');
+          } else {
+            menuToggle.text("COLLAPSE");
+          }
+        });
+      });
+
+      $('.accordion-tabs-minimal').each(function (index) {
+        $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();
+      });
+
+      $('.accordion-tabs-minimal').on('click', 'li > a', function (event) {
+        if (!$(this).hasClass('is-active')) {
+          event.preventDefault();
+          var accordionTabs = $(this).closest('.accordion-tabs-minimal')
+          accordionTabs.find('.is-open').removeClass('is-open').hide();
+
+          $(this).next().toggleClass('is-open').toggle();
+          accordionTabs.find('.is-active').removeClass('is-active');
+          $(this).addClass('is-active');
+        } else {
+          event.preventDefault();
+        }
+      });
+
+
+      $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+
+      $('.invert').click(function () {
+        if ($('html').hasClass('html-inverted')) {
+          $('html').removeClass('html-inverted');
+        } else {
+          $('html').addClass('html-inverted');
+        }
+      });
+
+      $('.embiggen').click(function () {
+        if ($('body').hasClass('body-embiggened')) {
+          $('body').removeClass('body-embiggened');
+        } else {
+          $('body').addClass('body-embiggened');
+        }
+      });
+
+      $('.grid-item').each(function (i) {
+        var imgSrc = $(this).children('img').attr("src");
+        $(this).css({
+          background: " -moz-linear-gradient(top, rgba(64,64,64,0.45) 0%, rgba(64,64,64,0.45) 100%), url(" + imgSrc + ") center no-repeat"
+        }).css({
+          background: " -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(64,64,64,0.45)), color-stop(100%,rgba(64,64,64,0.45))), url(" + imgSrc + ") center no-repeat"
+        }).css({
+          background: " -webkit-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url(" + imgSrc + ") center no-repeat"
+        }).css({
+          background: " -o-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url(" + imgSrc + ") center no-repeat"
+        }).css({
+          background: " -ms-linear-gradient(top, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url(" + imgSrc + ") center no-repeat"
+        }).css({
+          background: " linear-gradient(to bottom, rgba(64,64,64,0.45) 0%,rgba(64,64,64,0.45) 100%), url(" + imgSrc + ") center no-repeat"
+          // }).css({
+          // background: "url("+ imgSrc +")"
+        }).css({
+          filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr='#73404040', endColorstr='#73404040',GradientType=0 )"
+        });
+      });
+
+    });
+
+  </script>
+  </body>
+
+</html>
