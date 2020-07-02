@@ -23,6 +23,9 @@ sass:
   sass_dir: _sass
   style: :nested
 
+font-awesome:
+  assets: true
+
 gems: [font-awesome-sass]
 
 include: [".htpasswd", ".htaccess"]
