@@ -11,6 +11,7 @@ VEBsite
 	gem install neat
   gem install font-awesome-sass -v 4.0.1
 	gem install jekyll
+=======
 
 ##### Important: flask upgrade MAY be broken with celluloid upgrde, stick to 0.16.0 for now
 	gem install celluloid --version '=0.16.0'
