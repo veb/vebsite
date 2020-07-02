@@ -1,36 +1,36 @@
 ---
-layout: default 
+layout: default
 ---
 <div id="fullpage">
 
-    <div class="section" id="">
-        {% include whatwedo.html %}
-    </div>
+  <div class="section" id="">
+    {% include whatwedo.html %}
+  </div>
 
-    <div class="section">
-        <div class="responsive-container container">
-            <h2 class="page-title">Projects</h2>
-            <div class="grid-items">
-            {% assign pages = site.pages | sort:"weight"  %}
-            {% for page in pages %}
-                {% if page.categories contains 'project' %}
-                    <a href="{{ page.path }}" class="grid-item">
-                        <div class="ribbon-wrapper">
-                            <div class="ribbon ribbon-{{page.type}}">{{page.type}}</div>
-                        </div>
-                        <img src="{{ page.thumbnail }}" alt="">
-                        <div id="griditem-{{ page.title }}">
-                        <h1>{{ page.title }}</h1>
-                        <p>{{ page.description }}</p>
-                        </div>
-                    </a>
-                {% endif %}
-            {% endfor %}
-            </div>
-        </div>
+  <div class="section">
+    <div class="responsive-container container">
+      <h2 class="page-title">Projects</h2>
+      <div class="grid-items">
+        {% assign pages = site.pages | sort:"weight"  %}
+        {% for page in pages %}
+        {% if page.categories contains 'project' %}
+        <a href="{{ page.path }}" class="grid-item">
+          <div class="ribbon-wrapper">
+            <div class="ribbon ribbon-{{page.type}}">{{page.type}}</div>
+          </div>
+          <img src="{{ page.thumbnail }}" alt="">
+          <div id="griditem-{{ page.title }}">
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.description }}</p>
+          </div>
+        </a>
+        {% endif %}
+        {% endfor %}
+      </div>
     </div>
+  </div>
 
-    <div class="section">
+  <!-- <div class="section">
         <div class="responsive-container container">
             <h2 class="page-title">The Team</h2>
             <div class="avatars">
@@ -66,5 +66,5 @@ layout: default
                 {% endfor %}
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
